@@ -9,6 +9,11 @@ export default {
         sans: ['Quicksand Variable', ...defaultTheme.fontFamily.sans],
 		mono: ['"Exo 2 Variable"', ...defaultTheme.fontFamily.mono],
       },
+      colors: {
+        'accent': '#D7F205',
+        'text': '#CDCDCD',
+        'background': '#262626',
+      }
     },
   },
   plugins: [],

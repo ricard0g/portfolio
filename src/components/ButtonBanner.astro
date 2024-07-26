@@ -1,0 +1,7 @@
+---
+const { imgSrc, imgAlt, href, linkText } = Astro.props;
+---
+<button type="button" class="w-1/2 px-4 py-1 flex justify-center items-center bg-accent rounded-full gap-2">
+    <img src={imgSrc} alt={imgAlt} class="max-w-4">
+    <a href={href} target="_blank" class="text-black font-medium">{linkText}</a>
+</button>

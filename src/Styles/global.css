@@ -15,3 +15,18 @@ html {
 	background-size: cover;
     background-position: center;
 }
+
+.fotoBanner {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Blender */
+
+.blender {
+    background: linear-gradient(180deg, hsla(0%, 0%, 15%, 100%), hsla(0%, 0%, 15%, 100%));
+}

@@ -1,19 +1,55 @@
 ---
-import '../Styles/global.css';
+import "../Styles/global.css";
 import MainLayout from "../layouts/MainLayout.astro";
+import ButtonBanner from "../components/buttonBanner.astro";
 ---
 
 <MainLayout title="Ricardo's Portfolio">
-	<section class="mainLayout h-screen w-full flex flex-col justify-center items-center px-12 gap-4">
-		<button type="button" class="w-50 px-4 py-1 flex justify-center items-center bg-sky-500 rounded-full gap-2">
-			<img src="/assets/mail-svgrepo-com.svg" alt="Mail Icon" class="max-w-4">
-			<a href="mailto:ricardoguzman444@gmail.com" class="text-white">Contactame</a>
+	<section
+		class="mainLayout h-screen w-full flex flex-col justify-center items-center px-12 gap-12 mb-12"
+	>
+		<button
+			type="button"
+			class="w-50 px-4 py-1 flex justify-center items-center bg-sky-500 rounded-full gap-2"
+		>
+			<img src="/assets/mail-svgrepo-com.svg" alt="Mail Icon" class="max-w-4" />
+			<a
+				target="_blank"
+				href="mailto:ricardoguzman444@gmail.com"
+				class="text-white">Contactame</a
+			>
 		</button>
-		<h1s class="text-white font-semibold text-xl text-center max-w-prose">👋 Hola!<br/>Soy Ricardo Guzman</h1s>
-		<figure>
-			<img src="" />
+		<h1s class="text-white font-semibold text-xl text-center max-w-prose"
+			>👋 Hola!<br />Soy Ricardo Guzman</h1s
+		>
+		<figure class="rounded-full w-3/4">
+			<img src="/assets/foto-banner.webp" class="fotoBanner" alt="Personal Photo" />
 		</figure>
-		<h3 class="text-white text-center text-lg max-w">Construyendo soluciones para la vida a traves del Software</h3>
-		<div></div>
+		<h3 class="font-mono text-text font-thin text-center text-lg max-w-64">
+			Construyendo soluciones para la vida a traves del Software
+		</h3>
+		<div class="flex justify-center items-center max-w-screen-md gap-4">
+			<ButtonBanner
+				imgSrc="/assets/linkedin-icon.svg"
+				imgAlt="Linkedin Icon"
+				href="https://www.linkedin.com/in/ricardo-guzman-duran-a09b62176"
+				linkText="LinkedIn"
+			/>
+			<ButtonBanner
+				imgSrc="/assets/github-icon.svg"
+				imgAlt="GitHub Icon"
+				href="https://github.com/ricard0g"
+				linkText="GitHub"
+			/>
+		</div>
+	</section>
+	<!-- Blender -->
+	 <div class="w-full h-20 bg-gradient-to-tr from-background -mt-16"></div>
+	<!-- About Me -->
+	<section class="w-full h-auto">
+		<div class="flex justify-start items-center gap-2 w-3/4 mx-auto">
+			<img src="/assets/avatar-icon.svg" alt="Avatar Icon" class="w-10 h-auto">
+			<h2 class="font-mono text-2xl text-white">Sobre Mi</h2>
+		</div>
 	</section>
 </MainLayout>
