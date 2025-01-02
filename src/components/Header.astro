@@ -1,0 +1,32 @@
+---
+import { animate } from "motion/mini";
+---
+<header client:load>
+  <nav class="flex justify-between w-3/4 m-auto py-4">
+    <div>
+      <a href="#">
+        <img src="/portfolio-logo.svg" class="w-14" />
+      </a>
+    </div>
+    <ul class="flex items-center min-h-full">
+      <li class="mx-3">
+        <a href="#home" class="text-xl">Home</a>
+      </li>
+      <li class="mx-3">
+        <a href="#skills" class="text-xl">Skills</a>
+      </li>
+      <li class="mx-3">
+        <a href="#about" class="text-xl">About</a>
+      </li>
+      <li class="mx-3">
+        <a href="#projects" class="text-xl">Projects</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    animate("li", { x: [0, 100] }, { ease: "easeIn" });
+  });
+</script>
