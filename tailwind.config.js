@@ -5,7 +5,14 @@ export default {
     fontFamily: {
       display: ["Playfair Display", "serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        shopify: {
+          light: "#BBF1C8",
+          main: "#008060",
+        },
+      },
+    },
   },
   plugins: [require("tailwindcss-animated")],
 };
