@@ -1,32 +1,38 @@
 ---
-import { animate } from "motion/mini";
+
 ---
-<header client:load>
-  <nav class="flex justify-between w-3/4 m-auto py-4">
-    <div>
-      <a href="#">
-        <img src="/portfolio-logo.svg" class="w-14" />
-      </a>
-    </div>
-    <ul class="flex items-center min-h-full">
-      <li class="mx-3">
-        <a href="#home" class="text-xl">Home</a>
+<header>
+<nav class="flex justify-between w-3/5 m-auto py-4">
+  <div>
+    <a href="#">
+      <img src="/portfolio-logo.svg" class="w-14" />
+    </a>
+  </div>
+  <ul class="flex items-center min-h-full">
+    <li class="mx-3 transition-all duration-150 hover:border-b-2 hover:border-black ">
+        <a href="#home" class="relative block group overflow-hidden">
+          <span class="inline-block transition-transform duration-300 group-hover:-translate-y-full text-lg">Home</span>
+          <span class="absolute left-0 transition-transform duration-300 translate-y-full group-hover:translate-y-0 text-lg">Home</span>
+        </a>
       </li>
-      <li class="mx-3">
-        <a href="#skills" class="text-xl">Skills</a>
+      <li class="mx-3 transition-all duration-150 hover:border-b-2 hover:border-black">
+        <a href="#skills" class="relative block group overflow-hidden">
+          <span class="inline-block transition-transform duration-300 group-hover:-translate-y-full text-lg">Skills</span>
+          <span class="absolute left-0 transition-transform duration-300 translate-y-full group-hover:translate-y-0 text-lg">Skills</span>
+        </a>
       </li>
-      <li class="mx-3">
-        <a href="#about" class="text-xl">About</a>
+      <li class="mx-3 transition-all duration-150 hover:border-b-2 hover:border-black">
+        <a href="#about" class="relative block group overflow-hidden">
+          <span class="inline-block transition-transform duration-300 group-hover:-translate-y-full text-lg">About</span>
+          <span class="absolute left-0 transition-transform duration-300 translate-y-full group-hover:translate-y-0 text-lg">About</span>
+        </a>
       </li>
-      <li class="mx-3">
-        <a href="#projects" class="text-xl">Projects</a>
+      <li class="mx-3 transition-all duration-150 hover:border-b-2 hover:border-black">
+        <a href="#projects" class="relative block group overflow-hidden">
+          <span class="inline-block transition-transform duration-300 group-hover:-translate-y-full text-lg">Projects</span>
+          <span class="absolute left-0 transition-transform duration-300 translate-y-full group-hover:translate-y-0 text-lg">Projects</span>
+        </a>
       </li>
     </ul>
   </nav>
 </header>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    animate("li", { x: [0, 100] }, { ease: "easeIn" });
-  });
-</script>
