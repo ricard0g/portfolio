@@ -2,43 +2,63 @@
 
 ---
 
-<section class="flex justify-between items-center w-3/4 h-4/6 m-auto">
-  <div class="relative w-3/5">
+<section
+  class="flex flex-col md:flex-row justify-start md:justify-center items-center w-[90%] md:w-4/5 h-5/6 sm:h-4/6 m-auto"
+>
+  <div class="relative w-full md:w-3/5 order-2 md:order-1">
     <p
-      class="font-semibold text-gray-800 text-2xl animate-fade-up animate-duration-700"
+      class="font-semibold text-gray-800 text-lg sm:text-xl md:text-lg animate-fade-up animate-duration-700"
     >
       Hi, <span
-        class="inline-block animate-wiggle animate-infinite animate-duration-1000 text-2xl"
+        class="inline-block animate-wiggle animate-infinite animate-duration-1000 text-xl sm:text-2xl"
         >👋🏻</span
       > I'm Ricardo Guzman
     </p>
     <h1
-      class="font-display font-light leading-tight tracking-tight italic text-gray-800 text-7xl text-balance animate-fade-right animate-duration-700 animate-delay-300"
+      class="inline font-display font-light leading-tight tracking-tight text-gray-800 text-4xl md:text-5xl lg:text-6xl animate-fade-right animate-duration-700 animate-delay-300"
     >
       Shopify Developer
-    </h1>
+      <svg
+        class="hidden max-w-12 md:inline animate-spin animate-infinite animate-duration-[4000ms]"
+        fill="#242424"
+        width="60px"
+        height="60px"
+        viewBox="0 0 32 32"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        stroke="#242424"
+        stroke-width="0.00032"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke="#CCCCCC"
+          stroke-width="0.192"></g>
+
+        <g id="SVGRepo_iconCarrier">
+          <title>star-of-life</title>
+          <path
+            d="M28.5 22.35l-10.999-6.35 10.999-6.351c0.231-0.131 0.385-0.375 0.385-0.655 0-0.414-0.336-0.75-0.75-0.75-0.142 0-0.275 0.040-0.388 0.108l0.003-0.002-11 6.35v-12.701c0-0.414-0.336-0.75-0.75-0.75s-0.75 0.336-0.75 0.75v0 12.7l-10.999-6.35c-0.11-0.067-0.243-0.106-0.385-0.106-0.414 0-0.75 0.336-0.75 0.75 0 0.28 0.154 0.524 0.381 0.653l0.004 0.002 10.999 6.351-10.999 6.35c-0.226 0.132-0.375 0.374-0.375 0.65 0 0.415 0.336 0.751 0.751 0.751 0 0 0 0 0.001 0h-0c0.138-0.001 0.266-0.037 0.378-0.102l-0.004 0.002 10.999-6.351v12.7c0 0.414 0.336 0.75 0.75 0.75s0.75-0.336 0.75-0.75v0-12.701l11 6.351c0.107 0.063 0.237 0.1 0.374 0.1 0.277 0 0.518-0.149 0.649-0.371l0.002-0.004c0.063-0.108 0.1-0.237 0.1-0.375 0-0.277-0.15-0.518-0.372-0.648l-0.004-0.002z"
+          ></path>
+        </g>
+      </svg>
+    </h1><br class="hidden sm:inline-block" />
     <h1
-      class="font-display font-light leading-tight tracking-tight italic text-gray-800 text-7xl text-balance animate-fade-left animate-duration-700 animate-delay-[600ms]"
+      class="inline font-display font-light leading-tight tracking-tight text-gray-800 text-4xl md:text-5xl lg:text-6xl text-balance animate-fade-left animate-duration-700 animate-delay-[600ms]"
     >
       and CRO Specialist
     </h1>
-    <span
-      class="absolute top-12 right-[15%] inline-block animate-fade-left animate-duration-700 animate-delay-300"
-    >
-      <img
-        src="/icon-star.svg"
-        alt="Rotating Star Icon"
-        class="animate-spin animate-infinite animate-duration-[4000ms]"
-      />
-    </span>
     <h2
-      class="max-w-full font-light text-balance text-xl mt-8 leading-relaxed tracking-[.01em] animate-fade-up animate-duration-700 animate-delay-[900ms]"
+      class="max-w-full font-light text-pretty text-base md:text-xl mt-8 leading-relaxed tracking-[.01em] animate-fade-up animate-duration-700 animate-delay-[900ms]"
     >
       Helping eCommerce brands transform their Shopify stores through strategic
       customization and data-driven CRO to turn customers into loyal customers.
     </h2>
     <a
-      class="inline-block bg-shopify-light py-2 px-6 rounded-md mt-12 animate-fade-up animate-duration-700 animate-delay-[1200ms]"
+      class="inline-block bg-shopify-light py-2 px-6 rounded-md mt-6 md:mt-12 animate-fade-up animate-duration-700 animate-delay-[1200ms]"
     >
       <button class="flex relative justify-between group overflow-hidden">
         <div class="relative block mr-2">
@@ -66,9 +86,15 @@
       </button>
     </a>
   </div>
-  <div class="w-5/12 animate-fade animate-duration-1000">
-    <figure>
+  <div
+    class="w-3/6 mb-8 md:w-5/12 animate-fade animate-duration-1000 order-1 md:order-2"
+  >
+    <figure class="relative">
       <img src="/banner-img.webp" alt="Ricardo Posing" class="max-w-full" />
+      <div
+        class="absolute bottom-0 w-full h-1/2 bg-gradient-to-b from-transparent to-white"
+      >
+      </div>
     </figure>
   </div>
 </section>

@@ -8,8 +8,8 @@ export default function HeaderMobile() {
   };
 
   return (
-    <header className="md:hidden">
-      <section className="flex justify-between w-3/4 m-auto py-4 z-10">
+    <header className="md:hidden overflow-hidden">
+      <section className="flex justify-between w-[90%] md:w-4/5 m-auto py-4 z-10">
         <div className="z-10">
           <a href="#">
             <svg
