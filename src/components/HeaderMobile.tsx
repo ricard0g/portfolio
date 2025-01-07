@@ -25,30 +25,30 @@ export default function HeaderMobile() {
                 <clipPath id="5f24373ab6">
                   <path
                     d="M 136 115 L 342.285156 115 L 342.285156 353.4375 L 136 353.4375 Z M 136 115 "
-                    clip-rule="nonzero"
+                    clipRule="nonzero"
                   />
                 </clipPath>
                 <clipPath id="05d2bfb94c">
                   <path
                     d="M 32.535156 21.9375 L 237 21.9375 L 237 214 L 32.535156 214 Z M 32.535156 21.9375 "
-                    clip-rule="nonzero"
+                    clipRule="nonzero"
                   />
                 </clipPath>
               </defs>
-              <g clip-path="url(#5f24373ab6)">
+              <g clipPath="url(#5f24373ab6)">
                 <path
                   fill={isMenuOpen ? "#ffffff" : "#000000"}
                   d="M 241.835938 268.316406 C 271.78125 260.21875 296.050781 247.480469 314.613281 230.128906 C 333.160156 212.78125 342.449219 190.332031 342.449219 162.757812 L 342.449219 115.820312 L 237.808594 116.015625 L 237.808594 166.652344 C 237.808594 181.246094 230.992188 192.914062 217.351562 201.675781 C 203.71875 210.425781 184.160156 214.804688 158.664062 214.804688 L 136.867188 214.804688 L 136.867188 282.777344 L 200.308594 353.085938 L 321.039062 353.085938 L 241.835938 268.316406 "
-                  fill-opacity="1"
-                  fill-rule="nonzero"
+                  fillOpacity="1"
+                  fillRule="nonzero"
                 />
               </g>
-              <g clip-path="url(#05d2bfb94c)">
+              <g clipPath="url(#05d2bfb94c)">
                 <path
                   fill={isMenuOpen ? "#ffffff" : "#000000"}
                   d="M 236.820312 115.175781 L 236.820312 21.945312 L 32.582031 21.945312 L 32.582031 213.304688 L 135.875 213.304688 L 135.875 115.175781 L 236.820312 115.175781 "
-                  fill-opacity="1"
-                  fill-rule="nonzero"
+                  fillOpacity="1"
+                  fillRule="nonzero"
                 />
               </g>
             </svg>
@@ -163,11 +163,11 @@ export default function HeaderMobile() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
@@ -197,11 +197,11 @@ export default function HeaderMobile() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
@@ -231,11 +231,11 @@ export default function HeaderMobile() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
@@ -265,11 +265,11 @@ export default function HeaderMobile() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       {" "}
