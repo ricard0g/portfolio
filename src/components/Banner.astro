@@ -1,9 +1,9 @@
 ---
-import SlidingBar from "./SlidingBar.tsx";
+import SlidingBar from "./SlidingBar.astro";
 ---
 
 <section
-  class="flex flex-col md:flex-row justify-start md:justify-center items-center w-11/12 min-[911px]:w-4/5 py-10 md:py-20 m-auto"
+  class="flex flex-col md:flex-row justify-start md:justify-center items-center w-11/12 min-[911px]:w-4/5 py-5 md:py-20 m-auto"
 >
   <div class="relative w-full md:w-4/5 order-2 md:order-1">
     <p
@@ -19,7 +19,7 @@ import SlidingBar from "./SlidingBar.tsx";
     >
       Shopify Developer
       <svg
-        class="hidden md:max-w-15 md:inline animate-spin animate-infinite animate-duration-[4000ms]"
+        class="hidden w-10 md:w-12 md:inline animate-spin animate-infinite animate-duration-[4000ms]"
         fill="#242424"
         width="60px"
         height="60px"
@@ -49,11 +49,11 @@ import SlidingBar from "./SlidingBar.tsx";
     <h2
       class="max-w-full font-light text-pretty text-base md:text-xl mt-8 leading-relaxed tracking-wide animate-fade-up animate-duration-700 animate-delay-[900ms]"
     >
-      Helping eCommerce brands transform their Shopify stores through strategic
-      customization and data-driven CRO to turn visitors into loyal customers.
+      Expert Frontend Developer specializing in Shopify Theme Development,
+      crafting high-converting and beautifully customized online stores.
     </h2>
     <a
-      class="inline-block bg-shopify-light py-2 px-6 rounded-md mt-6 md:mt-12 animate-fade-up animate-duration-700 animate-delay-[1200ms]"
+      class="inline-block bg-shopify-light transition-all duration-300 shadow-button hover:shadow-buttonHover hover:translate-y-full py-2 px-6 rounded-md mt-6 md:mt-12 animate-fade-up animate-duration-700 animate-delay-[1200ms]"
     >
       <button class="flex relative justify-between group overflow-hidden">
         <div class="relative block mr-2">

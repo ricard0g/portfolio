@@ -25,10 +25,13 @@ export default {
     extend: {
       colors: {
         shopify: {
+          dark: "#2C3320",
           light: "#bbf1c8",
         },
       },
       boxShadow: {
+        button: "3px 3px 0 #000",
+        buttonHover: "6px 6px 0 #000",
         blob: "0 0 100px 100px #bbf1c8",
         smallBlob: "0 0 50px 50px #bbf1c8",
       },
