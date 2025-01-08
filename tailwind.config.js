@@ -23,6 +23,23 @@ export default {
       ],
     },
     extend: {
+      keyframes: {
+        slider: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-100%)" },
+          "50.1%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        secondSlider: {
+          "0%": { transform: "translateX(100%)" },
+          "50%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        slider: "slider 20s linear infinite",
+        secondSlider: "secondSlider 20s linear infinite",
+      },
       colors: {
         shopify: {
           dark: "#2C3320",
@@ -30,8 +47,8 @@ export default {
         },
       },
       boxShadow: {
-        button: "3px 3px 0 #000",
-        buttonHover: "6px 6px 0 #000",
+        button: "-4px 4px 0 rgb(55, 65, 81)",
+        buttonHover: "-8px 8px 0 #000",
         blob: "0 0 100px 100px #bbf1c8",
         smallBlob: "0 0 50px 50px #bbf1c8",
       },
