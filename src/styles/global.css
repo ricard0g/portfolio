@@ -1,0 +1,42 @@
+/* Slider Animation */
+.slider {
+  display: flex;
+  align-content: center;
+  width: 60%;
+  height: 8vh;
+  margin: 0 auto;
+  background: linear-gradient(180deg, black, rgb(31, 51, 55));
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow:
+    inset 0px 2px 2px gray,
+    2px 2px 2px #000;
+  border: 1px solid rgb(31, 51, 55);
+}
+
+.slider .list {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.slider .list .item {
+  width: var(--width);
+  height: 40px;
+  position: absolute;
+  top: 25%;
+  left: 100%;
+  animation: autoRun 18s linear infinite;
+  animation-delay: calc((18s / var(--quantity)) * (var(--position) - 1));
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
