@@ -4,7 +4,7 @@
   align-content: center;
   width: 60%;
   height: 8vh;
-  margin: 0 auto;
+  margin: 5vh auto;
   background: linear-gradient(180deg, black, rgb(31, 51, 55));
   overflow: hidden;
   border-radius: 50px;
@@ -18,18 +18,18 @@
   height: 100%;
   display: flex;
   width: 100%;
-  min-width: calc(var(--width) * var(--quantity));
+  min-width: calc(40px * var(--quantity));
   position: relative;
 }
 
 .slider .list .item {
-  width: var(--width);
+  width: 40px;
   height: 40px;
   position: absolute;
   top: 25%;
   left: 100%;
-  animation: autoRun 18s linear infinite;
-  animation-delay: calc((18s / var(--quantity)) * (var(--position) - 1));
+  animation: autoRun 12s linear infinite;
+  animation-delay: calc((12s / var(--quantity)) * (var(--position) - 1));
 }
 
 @keyframes autoRun {
@@ -37,6 +37,32 @@
     left: 100%;
   }
   to {
-    left: calc(var(--width) * -1);
+    left: calc(40px * -1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    width: 90%;
+  }
+
+  .slider .list {
+    min-width: 200%;
+  }
+
+  .slider .list .item {
+    width: 30px;
+    height: 30px;
+    animation: autoRun 9s linear infinite;
+    animation-delay: calc((9s / var(--quantity)) * (var(--position) - 1));
+  }
+
+  @keyframes autoRun {
+    from {
+      left: 100%;
+    }
+    to {
+      left: calc(30px * -1);
+    }
   }
 }
