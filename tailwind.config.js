@@ -21,6 +21,12 @@ export default {
           fontVariationSettings: '"wght" 500',
         },
       ],
+      textBold: [
+        '"pf-grand-gothik-variable", sans-serif',
+        {
+          fontVariationSettings: '"wght" 800',
+        },
+      ],
     },
     extend: {
       colors: {
