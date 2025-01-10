@@ -100,10 +100,10 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#skills"
+                  href="#services"
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
-                  Skills
+                  Services
                 </a>
               </li>
               <li

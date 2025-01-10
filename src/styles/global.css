@@ -14,6 +14,10 @@
   border: 1px solid rgb(31, 51, 55);
 }
 
+.slider:hover .list .item {
+  animation-play-state: paused;
+}
+
 .slider .list {
   height: 100%;
   display: flex;
@@ -30,6 +34,7 @@
   left: 100%;
   animation: autoRun 12s linear infinite;
   animation-delay: calc((12s / var(--quantity)) * (var(--position) - 1));
+  transition: all 0.3s ease;
 }
 
 @keyframes autoRun {
