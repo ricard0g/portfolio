@@ -11,38 +11,38 @@ import {
 const data: any = [
   {
     name: "Jan",
-    "Sales Test 1": 300,
-    "Sales Test 2": 400,
+    "Sales Test A": 300,
+    "Sales Test B": 400,
   },
   {
     name: "Feb",
-    "Sales Test 1": 400,
-    "Sales Test 2": 300,
+    "Sales Test A": 400,
+    "Sales Test B": 300,
   },
   {
     name: "Mar",
-    "Sales Test 1": 200,
-    "Sales Test 2": 500,
+    "Sales Test A": 200,
+    "Sales Test B": 500,
   },
   {
     name: "Apr",
-    "Sales Test 1": 500,
-    "Sales Test 2": 400,
+    "Sales Test A": 500,
+    "Sales Test B": 400,
   },
   {
     name: "May",
-    "Sales Test 1": 400,
-    "Sales Test 2": 300,
+    "Sales Test A": 400,
+    "Sales Test B": 300,
   },
   {
     name: "Jun",
-    "Sales Test 1": 300,
-    "Sales Test 2": 200,
+    "Sales Test A": 300,
+    "Sales Test B": 200,
   },
   {
     name: "Jul",
-    "Sales Test 1": 400,
-    "Sales Test 2": 300,
+    "Sales Test A": 400,
+    "Sales Test B": 300,
   },
 ];
 
@@ -54,8 +54,8 @@ export default function Chart() {
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
-        <Line type="monotone" dataKey="Sales Test 1" stroke="#8884d8" />
-        <Line type="monotone" dataKey="Sales Test 2" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="Sales Test A" stroke="#8884d8" />
+        <Line type="monotone" dataKey="Sales Test B" stroke="#82ca9d" />
       </LineChart>
     </ResponsiveContainer>
   );

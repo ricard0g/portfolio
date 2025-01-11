@@ -63,7 +63,7 @@ export default function ServiceCard() {
             <Chart />
           </div>
         </div>
-        <div className="relative flex flex-col gap-y-10  w-full md:w-1/2 h-[600px] md:h-full p-10 bg-gray-50 rounded-xl border-[1px] border-gray-200 overflow-hidden z-0">
+        <div className="relative flex flex-col gap-y-10  w-full md:w-1/2 h-[600px] md:h-full p-10 bg-gradient-to-tl from-gray-50 to-gray-200 rounded-xl border-[1px] border-gray-200 overflow-hidden z-0">
           <h3 className="text-left font-textSemiBold text-xl">
             Store Migration
           </h3>
@@ -72,6 +72,11 @@ export default function ServiceCard() {
             or data. From WooCommerce to Adobe Commerce (formerly Magento), I
             handle it all.
           </p>
+          <div className="w-full -mt-5">
+            <video autoPlay muted playsInline loop className="w-full">
+              <source src="/store_migration_animation.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
       <div className="flex">
