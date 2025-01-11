@@ -31,7 +31,6 @@ export default {
     extend: {
       colors: {
         shopify: {
-          dark: "#2C3320",
           light: "#bbf1c8",
         },
       },
