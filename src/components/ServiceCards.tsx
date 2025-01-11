@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ServiceCard() {
   return (
-    <div className="flex flex-col items-center h-screen w-11/12 mt-14">
+    <div className="flex flex-col items-center h-screen w-11/12 min-[911px]:w-4/5 mt-14">
       <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 w-full md:h-[560px]">
         <div className="relative flex flex-col gap-y-10  w-full md:w-3/5 h-[600px] md:h-full p-10 bg-gradient-to-bl from-gray-50 from-50% to-shopify-light rounded-xl border-[1px] border-gray-200 overflow-hidden z-0">
           <h3 className="text-left font-textSemiBold text-xl">Store Setup</h3>
@@ -32,7 +32,7 @@ export default function ServiceCard() {
             that convert. Beautiful design meets proven results.
           </p>
           <div className="relative">
-            <figure className="absolute top-0 w-[180%] md:w-[160%] lg:w-[140%] xl:w-full -left-12 md:-left-10 lg:left-0 ">
+            <figure className="absolute top-0 w-[180%] md:w-[160%] lg:w-[140%] xl:w-[120%] -left-12 md:-left-10 lg:-left-10 lg:-mt-4 ">
               <img
                 src="/code_snippet_mockup.png"
                 className="w-full"
