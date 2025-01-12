@@ -72,7 +72,7 @@ export default function ServiceCard() {
             or data. From WooCommerce to Adobe Commerce (formerly Magento), I
             handle it all.
           </p>
-          <div className="w-full -mt-5">
+          <div className="relative w-[160%] min-[320px]:w-[155%] min-[375px]:w-[150%] min-[425px]:w-[140%] min-[500px]:w-[135%] sm:w-[120%]  md:w-[130%] lg:w-[110%] min-[1730px]:w-10/12 min-[2200px]:w-9/12 -left-14 min-[425px]:-left-14 min-[500px]:-left-16 sm:-left-8 md:-left-9 lg:-left-3 min-[1730px]:left-20 min-[2200px]:left-32 -mt-1 md:-mt-8 min-[2200px]:-mt-8">
             <video autoPlay muted playsInline loop className="w-full">
               <source src="/store_migration_animation.mp4" type="video/mp4" />
             </video>
