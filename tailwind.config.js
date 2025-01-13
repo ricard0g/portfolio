@@ -33,15 +33,22 @@ export default {
         shopify: {
           light: "#bbf1c8",
         },
+        googleCircleGreen: "rgba(5, 255, 159, 0.06)",
       },
       boxShadow: {
         button: "-4px 4px 0 rgb(55, 65, 81)",
         buttonHover: "-8px 8px 0 #000",
         blob: "0 0 100px 100px #bbf1c8",
         smallBlob: "0 0 50px 50px #bbf1c8",
+        googleCircle:
+          "0px 0.5px 0px 0.5px rgba(0, 0, 0, 0.1),  0px 10px 30px 0px rgba(243, 244, 246, 0.25) ",
       },
       borderRadius: {
         circle: "50%",
+      },
+      backgroundImage: {
+        "gradient-radial":
+          "radial-gradient(100% 64% at 50% 100%,#D1FBEB 0%,rgb(243,244,246) 100%);",
       },
     },
   },
