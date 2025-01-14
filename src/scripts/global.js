@@ -23,3 +23,30 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("bg-white", "bg-opacity-70", "blur-sm");
   }
 });
+
+// Translations cell animations
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("translation-container");
+  const cells = document.querySelectorAll("[id^='translation-cell']");
+  let hasPlayed = false;
+
+  const addAnimation = (cell, hasPlayed, position) => {
+    hasPlayed = true;
+    cell.classList.remove("opacity-0");
+    cell.classList.add("animate-fade-up", "animate-duration-700");
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting && !hasPlayed) {
+          cells.forEach((cell, index) => {
+            addAnimation(cell, hasPlayed, index);
+          });
+        }
+      });
+    },
+    { threshold: 0.8 },
+  );
+  observer.observe(container);
+});
