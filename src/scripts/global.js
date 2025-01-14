@@ -1,3 +1,5 @@
+import { CountUp } from "countup.js";
+
 // Scroll into view Navbar Links
 const links = document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -25,9 +27,9 @@ window.addEventListener("scroll", () => {
 });
 
 // Google Services animation
-/* function animateStrokeDashoffset() {
-  const element = document.getElementById("progress-path");
-  const startOffset = 402.1238596594935;
+function animateStrokeDashoffsetSeo() {
+  const progressSeo = document.getElementById("progress-path-seo");
+  const startOffsetSeo = 402.1238596594935;
   const duration = 3000; // 3 seconds
   let startTime;
 
@@ -35,33 +37,100 @@ window.addEventListener("scroll", () => {
     if (!startTime) startTime = timestamp;
     const elapsed = timestamp - startTime;
     const progress = Math.min(elapsed / duration, 1);
-    element.style.strokeDashoffset = startOffset - (startOffset * progress);
+    progressSeo.style.strokeDashoffset =
+      startOffsetSeo - startOffsetSeo * progress;
     if (progress < 1) requestAnimationFrame(update);
   }
 
   requestAnimationFrame(update);
 }
 
+function animateStrokeDashoffsetPerformance() {
+  const progressPerformance = document.getElementById(
+    "progress-path-performance",
+  );
+  const startOffsetRest = 339.29200658769764;
+  const duration = 3000; // 3 seconds
+  let startTime;
+
+  function update(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    progressPerformance.style.strokeDashoffset =
+      startOffsetRest - startOffsetRest * progress;
+    if (progress < 0.97) requestAnimationFrame(update);
+  }
+
+  requestAnimationFrame(update);
+}
+
+function animateStrokeDashoffsetAccessibility() {
+  const progressPerformance = document.getElementById(
+    "progress-path-accessibility",
+  );
+  const startOffsetRest = 339.29200658769764;
+  const duration = 3000; // 3 seconds
+  let startTime;
+
+  function update(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    progressPerformance.style.strokeDashoffset =
+      startOffsetRest - startOffsetRest * progress;
+    if (progress < 0.95) requestAnimationFrame(update);
+  }
+
+  requestAnimationFrame(update);
+}
+
+const countUpOptions = {
+  startVal: 0,
+  duration: 3,
+};
+const countUpSeo = new CountUp("progress-text-seo", 100, countUpOptions);
+const countUpPerformance = new CountUp(
+  "progress-text-performance",
+  99,
+  countUpOptions,
+);
+const countUpAccessibility = new CountUp(
+  "progress-text-accessibility",
+  98,
+  countUpOptions,
+);
+
 document.addEventListener("DOMContentLoaded", () => {
-  const element = document.getElementById("progress-path");
-  if (!element) return;
+  const elements = document.querySelectorAll("[id^='progress-path-']");
+  const container = document.getElementById(
+    "performance-optimization-container",
+  );
+  console.log(container);
+  console.log(`Classes: ${container.classList}`);
+  if (!elements) return;
 
   let hasPlayed = false;
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !hasPlayed) {
-        hasPlayed = true;
-        animateStrokeDashoffset();
-        observer.unobserve(element);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  observer.observe(element);
-}); */
-
-// This is the piece of code I got from o1 based on this prompt: "
-// I want the stroke-dashoffset to go completely to 0 in a very gradual manner. This will simulate a progress bar. When I say gradual it has to be very gradual.
-// Create a javascript function that very gradually decreases the stroke-dashoffset number from "402.1238596594935" to "0". This function should use plain JavaScript.
-// Be careful and don't decrease the number in gaps. I want the digit to decrease in a completely linear manner.
-// "
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !hasPlayed) {
+          setTimeout(() => {
+            hasPlayed = true;
+            animateStrokeDashoffsetSeo();
+            animateStrokeDashoffsetPerformance();
+            animateStrokeDashoffsetAccessibility();
+            countUpSeo.start();
+            countUpPerformance.start();
+            countUpAccessibility.start();
+            observer.unobserve(elements);
+          }, 1000);
+        }
+      });
+    },
+    { threshold: 0.8 },
+  );
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
+});

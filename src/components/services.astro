@@ -1,5 +1,6 @@
 ---
 import Chart from "./Chart.tsx";
+import "@/styles/global.css";
 ---
 
 <section
@@ -115,7 +116,7 @@ import Chart from "./Chart.tsx";
       class="flex flex-col md:flex-row gap-y-2 md:gap-x-2 w-full md:h-[560px]"
     >
       <div
-        class="relative flex flex-col gap-y-10 w-full md:w-3/5 h-[600px] md:h-full p-10 bg-gray-50 rounded-xl border-[1px] border-gray-200 text-gray-800 overflow-hidden z-0"
+        class="relative flex flex-col gap-y-10 w-full md:w-3/5 h-[600px] md:h-full p-10 bg-gradient-radial rounded-xl border-[1px] border-gray-200 text-gray-800 overflow-hidden z-0"
       >
         <h3 class="text-left font-textSemiBold text-xl">
           Performance Optimization
@@ -125,7 +126,8 @@ import Chart from "./Chart.tsx";
           industry-leading tools.
         </p>
         <div
-          class="flex flex-col justify-around h-auto p-6 bg-gradient-radial rounded-xl border-gray-300 border-[1px]"
+          id="performance-optimization-container"
+          class="flex flex-col justify-around h-auto p-6 bg-gradient-radial rounded-xl border-gray-300 border-[1px] overflow-hidden animate-fade-up animate-duration-700"
         >
           <div class="flex">
             <span>
@@ -148,39 +150,137 @@ import Chart from "./Chart.tsx";
             </span>
             <p class="inline">Google Lightouse</p>
           </div>
-          <div class="flex shrink-0 grow-0 basis-0 justify-around">
-            <div></div>
-            <div
-              class="w-min h-min bg-gradient-to-b from-gray-100 from-0% to-googleCircleGreen to-100% rounded-[200px] aspect-square shadow-googleCircle"
-            >
-              <svg
-                class="w-[150px] h-[150px]"
-                style="transform-origin: center; transform: rotate(-87deg)"
+          <div
+            id="google-performance"
+            class="flex justify-center shrink-0 grow-0 basis-0 gap-[15px] lg:gap-[20px] mt-4"
+          >
+            <div class="flex flex-col items-center">
+              <div
+                class="relative w-min h-min mt-6 bg-gradient-to-b from-gray-100 from-0% to-googleCircleGreen to-100% rounded-[200px] aspect-square shadow-googleCircle"
               >
-                <g class="translate-x-[6px] translate-y-[6px]">
-                  <circle
-                    cx="69"
-                    cy="69"
-                    r="64"
-                    fill="none"
-                    stroke="rgba(0, 0, 0, 0.1)"
-                    stroke-width="2"
-                    stroke-dasharray="402.1238596594935"></circle>
-                  <circle
-                    cx="69"
-                    cy="69"
-                    r="64"
-                    fill="none"
-                    stroke="rgb(0, 255, 157)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-dasharray="402.1238596594935"
-                    stroke-dashoffset="0"
-                    style="transform-origin: center center"></circle>
-                </g>
-              </svg>
+                <svg
+                  class="w-[130px] h-[130px]"
+                  style="transform-origin: center; transform: rotate(-87deg)"
+                >
+                  <g class="translate-x-[6px] translate-y-[6px]">
+                    <circle
+                      cx="59"
+                      cy="59"
+                      r="54"
+                      fill="none"
+                      stroke="rgba(0, 0, 0, 0.4)"
+                      stroke-dasharray="402.1238596594935"
+                      stroke-width="3"></circle>
+                    <circle
+                      id="progress-path-performance"
+                      cx="59"
+                      cy="59"
+                      r="54"
+                      fill="none"
+                      stroke="rgb(0, 255, 157)"
+                      stroke-linecap="round"
+                      stroke-dasharray="339.29200658769764"
+                      stroke-dashoffset="339.29200658769764"
+                      stroke-width="3"
+                      style="transform-origin: center center"></circle>
+                  </g>
+                </svg>
+                <p
+                  id="progress-text-performance"
+                  class="absolute top-[55px] right-[52px] text-gray-800 font-textSemiBold text-xl"
+                >
+                </p>
+              </div>
+              <div class="mt-5">
+                <p class="text-lg font-textSemiBold text-gray-800">
+                  Performance
+                </p>
+              </div>
             </div>
-            <div></div>
+            <div class="flex flex-col items-center">
+              <div
+                class="relative w-min h-min bg-gradient-to-b from-gray-100 from-0% to-googleCircleGreen to-100% rounded-[200px] aspect-square shadow-googleCircle"
+              >
+                <svg
+                  class="w-[150px] h-[150px]"
+                  style="transform-origin: center; transform: rotate(-87deg)"
+                >
+                  <g class="translate-x-[6px] translate-y-[6px]">
+                    <circle
+                      cx="69"
+                      cy="69"
+                      r="64"
+                      fill="none"
+                      stroke="rgba(0, 0, 0, 0.4)"
+                      stroke-dasharray="402.1238596594935"
+                      stroke-width="3"></circle>
+                    <circle
+                      id="progress-path-seo"
+                      cx="69"
+                      cy="69"
+                      r="64"
+                      fill="none"
+                      stroke="rgb(0, 255, 157)"
+                      stroke-linecap="round"
+                      stroke-dasharray="402.1238596594935"
+                      stroke-dashoffset="402.1238596594935"
+                      stroke-width="3"
+                      style="transform-origin: center center"></circle>
+                  </g>
+                </svg>
+                <p
+                  id="progress-text-seo"
+                  class="absolute top-[65px] right-[58px] text-gray-800 font-textSemiBold text-xl"
+                >
+                </p>
+              </div>
+              <div class="mt-5">
+                <p class="text-lg font-textSemiBold text-gray-800">SEO</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="relative w-min h-min mt-6 bg-gradient-to-b from-gray-100 from-0% to-googleCircleGreen to-100% rounded-[200px] aspect-square shadow-googleCircle"
+              >
+                <svg
+                  class="w-[130px] h-[130px]"
+                  style="transform-origin: center; transform: rotate(-87deg)"
+                >
+                  <g class="translate-x-[6px] translate-y-[6px]">
+                    <circle
+                      cx="59"
+                      cy="59"
+                      r="54"
+                      fill="none"
+                      stroke="rgba(0, 0, 0, 0.4)"
+                      stroke-dasharray="402.1238596594935"
+                      stroke-width="3"></circle>
+                    <circle
+                      id="progress-path-accessibility"
+                      cx="59"
+                      cy="59"
+                      r="54"
+                      fill="none"
+                      stroke="rgb(0, 255, 157)"
+                      stroke-linecap="round"
+                      stroke-dasharray="339.29200658769764"
+                      stroke-dashoffset="339.29200658769764"
+                      stroke-width="3"
+                      style="transform-origin: center center"></circle>
+                  </g>
+                </svg>
+                <p
+                  id="progress-text-accessibility"
+                  class="absolute top-[55px] right-[52px] text-gray-800 font-textSemiBold text-xl"
+                >
+                </p>
+              </div>
+              <div class="mt-5">
+                <p class="text-lg font-textSemiBold text-gray-800">
+                  Accessibility
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

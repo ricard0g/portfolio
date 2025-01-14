@@ -41,7 +41,7 @@ export default {
         blob: "0 0 100px 100px #bbf1c8",
         smallBlob: "0 0 50px 50px #bbf1c8",
         googleCircle:
-          "0px 0.5px 0px 0.5px rgba(0, 0, 0, 0.1),  0px 10px 30px 0px rgba(243, 244, 246, 0.25) ",
+          "0px 0.5px 0px 0.5px rgba(0, 0, 0, 0.15),  0px 10px 30px 0px rgba(243, 244, 246, 0.25) ",
       },
       borderRadius: {
         circle: "50%",
