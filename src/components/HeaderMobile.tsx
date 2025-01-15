@@ -58,7 +58,7 @@ export default function HeaderMobile() {
           <button
             id="mobile-menu-button"
             onClick={toggleMenu}
-            className="relative flex-col group items-center justify-around lg:hidden w-10 h-10 z-50"
+            className="relative flex-col group items-center justify-around lg:hidden w-10 h-10 z-50 pr-2"
             aria-label="Open Menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -81,7 +81,7 @@ export default function HeaderMobile() {
       <nav
         className={`fixed top-0 w-full min-h-full z-30 h-auto py-8 bg-[#131313] -translate-y-full transition-all duration-500 ${isMenuOpen ? "translate-y-0" : ""}`}
       >
-        <ul className="relative flex flex-col justify-evenly items-center content-center h-screen p-0 ">
+        <ul className="relative flex flex-col justify-evenly items-center content-center h-screen p-0">
           <li>
             <ul className="p-0 m-0">
               <li
