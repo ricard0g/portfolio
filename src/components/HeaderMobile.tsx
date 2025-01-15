@@ -1,7 +1,16 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function HeaderMobile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(window.scrollY);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.scrollY > 0) {
+        setScrollY(window.scrollY);
+      }
+    };
+  }, [scrollY]);
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
@@ -9,7 +18,9 @@ export default function HeaderMobile() {
 
   return (
     <header className="md:hidden overflow-hidden z-50">
-      <section className="fixed top-0 left-5 flex justify-between w-[90%] md:w-4/5 m-auto py-4 z-40">
+      <section
+        className={`fixed top-0 left-0 flex justify-between w-full md:w-4/5 m-auto py-4 px-4 z-40 transition-all duration-300 ${!isMenuOpen && scrollY > 0 ? "bg-white bg-opacity-70 backdrop-blur-sm" : ""}`}
+      >
         <div className="">
           <a href="#home">
             <svg
