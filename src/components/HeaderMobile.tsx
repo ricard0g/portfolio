@@ -15,11 +15,11 @@ export default function HeaderMobile() {
   };
 
   return (
-    <header className="md:hidden overflow-hidden z-50">
+    <header className="md:hidden max-w-full overflow-hidden z-50">
       <section
         className={`fixed top-0 left-0 flex justify-between w-full md:w-4/5 m-auto py-4 px-4 z-40 transition-all duration-300 ${!isMenuOpen && scrollY > 0 ? "bg-white bg-opacity-70 backdrop-blur-sm" : ""}`}
       >
-        <div className="">
+        <div>
           <a href="#home">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ export default function HeaderMobile() {
           <button
             id="mobile-menu-button"
             onClick={toggleMenu}
-            className="relative flex-col group items-center justify-around lg:hidden w-10 h-10 z-50 pr-2"
+            className="relative flex-col group items-center justify-around lg:hidden w-10 h-10 z-50 right-4"
             aria-label="Open Menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"

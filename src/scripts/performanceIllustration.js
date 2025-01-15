@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
             countUpPerformance.start();
             countUpAccessibility.start();
             elements.forEach((element) => observer.unobserve(element));
-          }, 1000);
+          }, 500);
         }
       });
     },

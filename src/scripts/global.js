@@ -24,6 +24,27 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Bento grid Fade on view
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("[id^='bento-grid-card']");
+  let hasPlayed = false;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const card = entry.target;
+        if (entry.isIntersecting && !hasPlayed) {
+          card.classList.remove("invisible");
+          card.classList.add("flex", "animate-fade-up", "animate-duration-700");
+        }
+      });
+    },
+    { threshold: 0.5 },
+  );
+  cards.forEach((card) => {
+    observer.observe(card);
+  });
+});
+
 // Translations cell animations
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("translation-container");
@@ -40,9 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
     (entries) => {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting && !hasPlayed) {
-          cells.forEach((cell, index) => {
-            addAnimation(cell, hasPlayed, index);
-          });
+          setTimeout(() => {
+            cells.forEach((cell, index) => {
+              addAnimation(cell, hasPlayed, index);
+            });
+          }, 500);
         }
       });
     },
