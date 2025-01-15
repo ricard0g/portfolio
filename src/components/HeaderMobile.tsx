@@ -8,10 +8,10 @@ export default function HeaderMobile() {
   };
 
   return (
-    <header className="md:hidden overflow-hidden">
-      <section className="flex justify-between w-[90%] md:w-4/5 m-auto py-4 z-50">
-        <div className="z-50">
-          <a href="#">
+    <header className="md:hidden overflow-hidden z-50">
+      <section className="fixed top-0 left-5 flex justify-between w-[90%] md:w-4/5 m-auto py-4 z-40">
+        <div className="">
+          <a href="#home">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48px"
@@ -58,7 +58,7 @@ export default function HeaderMobile() {
           <button
             id="mobile-menu-button"
             onClick={toggleMenu}
-            className="relative flex-col group items-center justify-around lg:hidden w-10 h-10 z-10"
+            className="relative flex-col group items-center justify-around lg:hidden w-10 h-10 z-50"
             aria-label="Open Menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
@@ -79,9 +79,9 @@ export default function HeaderMobile() {
         </div>
       </section>
       <nav
-        className={`absolute top-0 w-screen min-h-screen h-auto z-[5] py-8 bg-[#131313] -translate-y-full transition-all duration-500 ${isMenuOpen ? "translate-y-0" : ""}`}
+        className={`fixed top-0 w-full min-h-full z-30 h-auto py-8 bg-[#131313] -translate-y-full transition-all duration-500 ${isMenuOpen ? "translate-y-0" : ""}`}
       >
-        <ul className="relative p-0 mt-28">
+        <ul className="relative flex flex-col justify-evenly items-center content-center h-screen p-0 ">
           <li>
             <ul className="p-0 m-0">
               <li
@@ -89,7 +89,7 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#"
+                  href="#home"
                   className="inline-block w-full text-3xl sm:text-4xl font-bold text-center text-white"
                 >
                   Home
@@ -142,15 +142,15 @@ export default function HeaderMobile() {
             </ul>
           </li>
           <li
-            className={`w-full mt-24 ${isMenuOpen ? "animate-fade-up animate-duration-500 animate-delay-[1400ms]" : ""}`}
+            className={`w-full ${isMenuOpen ? "animate-fade-up animate-duration-500 animate-delay-[1400ms]" : ""}`}
           >
-            <ul className="grid sm:grid-cols-2 sm:grid-rows-2 place-items-start gap-x-5 gap-y-8 ">
-              <li className="px-10 ml-10 border-l-4 border-white">
-                <p className="text-base sm:text-lg text-white">
+            <ul className="grid grid-cols-2 grid-rows-2 place-items-start gap-x-5 gap-y-8 ">
+              <li className="px-5 sm:px-10 ml-5 sm:ml-10 border-l-4 border-white">
+                <p className="text-sm sm:text-lg text-white">
                   Regular updates on
                 </p>
                 <a
-                  className="inline-flex mt-2 text-2xl sm:text-3xl text-white font-bold"
+                  className="inline-flex mt-2 text-xl sm:text-3xl text-white font-bold"
                   href="https://www.instagram.com"
                   target="_blank"
                 >
@@ -179,8 +179,8 @@ export default function HeaderMobile() {
                   </svg>
                 </a>
               </li>
-              <li className="px-10 ml-10 border-l-4 border-white">
-                <p className="text-base sm:text-lg text-white">
+              <li className="px-5 sm:px-10 ml-5 sm:ml-10 border-l-4 border-white">
+                <p className="text-sm sm:text-lg text-white">
                   Daily content on
                 </p>
                 <a
@@ -213,8 +213,8 @@ export default function HeaderMobile() {
                   </svg>
                 </a>
               </li>
-              <li className="px-10 ml-10 border-l-4 border-white">
-                <p className="text-base sm:text-lg text-white">
+              <li className="px-5 sm:px-10 ml-5 sm:ml-10 border-l-4 border-white">
+                <p className="text-sm sm:text-lg text-white">
                   See how I work on
                 </p>
                 <a
@@ -247,8 +247,8 @@ export default function HeaderMobile() {
                   </svg>
                 </a>
               </li>
-              <li className="px-10 ml-10 border-l-4 border-white">
-                <p className="text-base sm:text-lg text-white">
+              <li className="px-5 sm:px-10 ml-5 sm:ml-10 border-l-4 border-white">
+                <p className="text-sm sm:text-lg text-white">
                   Let's connect on
                 </p>
                 <a
