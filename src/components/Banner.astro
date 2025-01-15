@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import ricardoImage from "../assets/images/banner-img.webp";
+import rightArrowIcon from "../assets/images/right-arrow-icon.svg";
 import SlidingBar from "./SlidingBar.astro";
 ---
 
@@ -68,13 +71,13 @@ import SlidingBar from "./SlidingBar.astro";
           >
         </div>
         <div class="relative block overflow-hidden">
-          <img
-            src="/right-arrow-icon.svg"
+          <Image
+            src={rightArrowIcon}
             alt="right arrow icon"
             class="inline-block ml-[2px] transition-transform duration-300 group-hover:translate-x-full text-lg"
           />
-          <img
-            src="/right-arrow-icon.svg"
+          <Image
+            src={rightArrowIcon}
             alt="right arrow icon"
             class="absolute left-0 top-0 transition-transform duration-300 -translate-x-full group-hover:translate-x-0 text-lg"
           />
@@ -90,7 +93,7 @@ import SlidingBar from "./SlidingBar.astro";
         class="absolute top-1/4 right-1/3 bg-shopify-light h-10 w-10 -z-10 rounded-circle shadow-smallBlob lg:shadow-blob"
       >
       </div>
-      <img src="/banner-img.webp" alt="Ricardo Posing" class="max-w-full" />
+      <Image src={ricardoImage} alt="Ricardo Posing" class="max-w-full" />
       <div
         class="absolute -bottom-1 w-full md:w-full h-1/2 bg-gradient-to-b from-transparent to-white"
       >
