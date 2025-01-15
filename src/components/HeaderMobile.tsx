@@ -6,11 +6,9 @@ export default function HeaderMobile() {
 
   useEffect(() => {
     window.onscroll = () => {
-      if (window.scrollY > 0) {
-        setScrollY(window.scrollY);
-      }
+      setScrollY(window.scrollY);
     };
-  }, [scrollY]);
+  });
 
   const toggleMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
