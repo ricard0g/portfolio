@@ -121,4 +121,4 @@ import HeaderMobile from "./HeaderMobile.tsx";
   </nav>
   <!-- Mobile Navigation -->
 </header>
-<HeaderMobile client:visible />
+<HeaderMobile client:media="(max-width: 768px)" client:only="react" />
