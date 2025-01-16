@@ -29,6 +29,22 @@ export default {
       ],
     },
     extend: {
+      keyframes: {
+        "background-slide": {
+          "0%": {
+            "background-position": "left",
+          },
+          "50%": {
+            "background-position": "right",
+          },
+          "100%": {
+            "background-position": "left",
+          },
+        },
+      },
+      animation: {
+        "background-slide": "background-slide 25s linear infinite",
+      },
       colors: {
         shopify: {
           light: "#bbf1c8",
@@ -49,6 +65,8 @@ export default {
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(100% 64% at 50% 100%,#D1FBEB 0%,rgb(243,244,246) 100%);",
+        "apps-background":
+          "url('./src/assets/images/apps-integration-image.webp')",
       },
     },
   },
