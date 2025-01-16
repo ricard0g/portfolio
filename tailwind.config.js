@@ -48,6 +48,7 @@ export default {
       colors: {
         shopify: {
           light: "#bbf1c8",
+          dark: "#304B4E",
         },
         googleCircleGreen: "rgba(5, 255, 159, 0.06)",
       },
