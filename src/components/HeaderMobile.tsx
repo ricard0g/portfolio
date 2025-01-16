@@ -20,7 +20,7 @@ export default function HeaderMobile() {
         className={`fixed top-0 left-0 flex justify-between w-full md:w-4/5 m-auto py-4 px-4 z-40 transition-all duration-300 ${!isMenuOpen && scrollY > 0 ? "bg-white bg-opacity-70 backdrop-blur-sm" : ""}`}
       >
         <div>
-          <a href="#home">
+          <a href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48px"
