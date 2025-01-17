@@ -91,7 +91,12 @@ import SlidingBar from "./SlidingBar.astro";
         class="absolute top-1/4 right-1/3 bg-shopify-light h-10 w-10 -z-10 rounded-circle shadow-smallBlob lg:shadow-blob"
       >
       </div>
-      <Image src={ricardoImage} alt="Ricardo Posing" class="max-w-full" />
+      <Image
+        fetchpriority="high"
+        src={ricardoImage}
+        alt="Ricardo Posing"
+        class="max-w-full"
+      />
       <div
         class="absolute -bottom-1 w-full md:w-full h-1/2 bg-gradient-to-b from-transparent to-white"
       >
