@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.8 },
+    { threshold: 0.5 },
   );
   observer.observe(container);
 });
