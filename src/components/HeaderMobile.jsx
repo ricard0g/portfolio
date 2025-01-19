@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function HeaderMobile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ export default function HeaderMobile() {
     };
   });
 
-  const toggleMenu = (): void => {
+  const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 

@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cells = document.querySelectorAll("[id^='translation-cell']");
   let hasPlayed = false;
 
-  const addAnimation = (cell, hasPlayed, position) => {
+  const addAnimation = (cell, hasPlayed) => {
     hasPlayed = true;
     cell.classList.remove("opacity-0");
     cell.classList.add("animate-fade-up", "animate-duration-700");
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry, index) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting && !hasPlayed) {
           setTimeout(() => {
             cells.forEach((cell, index) => {
