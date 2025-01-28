@@ -145,7 +145,7 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#contact"
+                  href="#contact-section"
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
                   Contact
