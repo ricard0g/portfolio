@@ -57,7 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectsCards = document.querySelectorAll("[id^='project-card']");
   const container = document.getElementById("translation-container");
   const cells = document.querySelectorAll("[id^='translation-cell']");
-  const sections = [middleSection, projectsCards, container, cells];
+  const contactSection = document.getElementById("contact-section");
+  const sections = [
+    middleSection,
+    projectsCards,
+    container,
+    cells,
+    contactSection,
+  ];
 
   const observer = new IntersectionObserver(
     (entries) => {
