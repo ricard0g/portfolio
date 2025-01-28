@@ -51,34 +51,13 @@ const addAnimation = (domElement) => {
   domElement.classList.add("animate-fade-up", "animate-duration-700");
 };
 
-// Translations cell animations
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("translation-container");
-  const cells = document.querySelectorAll("[id^='translation-cell']");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            cells.forEach((cell, index) => {
-              addAnimation(cell);
-            });
-          }, 500);
-        }
-      });
-    },
-    { threshold: 0.5 },
-  );
-  observer.observe(container);
-});
-
 // General "Lazy load" animation
 document.addEventListener("DOMContentLoaded", () => {
   const middleSection = document.getElementById("middle-section");
-  const projectsSection = document.getElementById("projects");
   const projectsCards = document.querySelectorAll("[id^='project-card']");
-  const sections = [middleSection, projectsSection, projectsCards];
+  const container = document.getElementById("translation-container");
+  const cells = document.querySelectorAll("[id^='translation-cell']");
+  const sections = [middleSection, projectsCards, container, cells];
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -90,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.1 },
+    { threshold: 0.2 },
   );
 
   sections.forEach((section) => {
