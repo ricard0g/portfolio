@@ -45,25 +45,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Add animation to element
+const addAnimation = (domElement) => {
+  domElement.classList.remove("opacity-0");
+  domElement.classList.add("animate-fade-up", "animate-duration-700");
+};
+
 // Translations cell animations
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("translation-container");
   const cells = document.querySelectorAll("[id^='translation-cell']");
-  let hasPlayed = false;
-
-  const addAnimation = (cell, hasPlayed) => {
-    hasPlayed = true;
-    cell.classList.remove("opacity-0");
-    cell.classList.add("animate-fade-up", "animate-duration-700");
-  };
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && !hasPlayed) {
+        if (entry.isIntersecting) {
           setTimeout(() => {
             cells.forEach((cell, index) => {
-              addAnimation(cell, hasPlayed, index);
+              addAnimation(cell);
             });
           }, 500);
         }
@@ -72,4 +71,35 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.5 },
   );
   observer.observe(container);
+});
+
+// General "Lazy load" animation
+document.addEventListener("DOMContentLoaded", () => {
+  const middleSection = document.getElementById("middle-section");
+  const projectsSection = document.getElementById("projects");
+  const projectsCards = document.querySelectorAll("[id^='project-card']");
+  const sections = [middleSection, projectsSection, projectsCards];
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            addAnimation(entry.target);
+          }, 300);
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
+
+  sections.forEach((section) => {
+    if (section.length > 1) {
+      section.forEach((element) => {
+        observer.observe(element);
+      });
+    } else {
+      observer.observe(section);
+    }
+  });
 });
