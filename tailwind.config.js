@@ -69,6 +69,7 @@ export default {
         "apps-background": "url('/portfolio/apps-integration-image.webp')",
         "middle-section-background":
           "url('/portfolio/background_middle_section.webp')",
+        "contact-background": "url('/portfolio/topography.svg')",
       },
     },
   },
