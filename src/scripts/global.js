@@ -1,14 +1,15 @@
 // Scroll into view Navbar Links
 const links = document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
+    console.log(this.getAttribute("href"));
     e.preventDefault();
-    if (location.pathname !== "/portfolio") {
+    if (location.pathname == "/portfolio") {
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
       window.location.href = "/portfolio" + this.getAttribute("href");
     }
-
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
   });
 });
 
