@@ -15,6 +15,12 @@ export default {
           fontVariationSettings: '"wdth" 100, "wght" 300',
         },
       ],
+      textBase: [
+        '"pf-grand-gothik-variable", sans-serif',
+        {
+          fontVariationSettings: '"wght" 300',
+        },
+      ],
       textSemiBold: [
         '"pf-grand-gothik-variable", sans-serif',
         {
