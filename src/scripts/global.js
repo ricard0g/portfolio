@@ -2,6 +2,9 @@
 const links = document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
+    if (location.pathname !== "/portfolio") {
+      window.location.href = "/portfolio" + this.getAttribute("href");
+    }
 
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",

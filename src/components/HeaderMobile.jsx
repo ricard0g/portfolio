@@ -101,7 +101,11 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#home"
+                  href={
+                    window.location.pathname !== "/portfolio"
+                      ? "/portfolio#home"
+                      : "#home"
+                  }
                   className="inline-block w-full text-3xl sm:text-4xl font-bold text-center text-white"
                 >
                   Home
@@ -112,7 +116,11 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#services"
+                  href={
+                    window.location.pathname !== "/portfolio"
+                      ? "/portfolio#services"
+                      : "#services"
+                  }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
                   Services
@@ -123,7 +131,7 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#About"
+                  href="/portfolio/about"
                   className="inline-block w-full text-3xl sm:text-4xl text-center text-white font-bold"
                 >
                   About
@@ -134,7 +142,11 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#projects"
+                  href={
+                    window.location.pathname !== "/portfolio"
+                      ? "/portfolio#projects"
+                      : "#projects"
+                  }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
                   Projects
@@ -145,7 +157,11 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="#contact-section"
+                  href={
+                    window.location.pathname !== "/portfolio"
+                      ? "/portfolio#contact-section"
+                      : "#contact-section"
+                  }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
                   Contact
