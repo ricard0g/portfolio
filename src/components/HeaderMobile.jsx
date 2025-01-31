@@ -21,7 +21,7 @@ export default function HeaderMobile() {
       >
         <div>
           <a
-            href="/portfolio"
+            href="/"
             aria-roledescription="Ricardo's Logo, serves as Link also"
           >
             <svg
@@ -101,11 +101,7 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href={
-                    window.location.pathname !== "/portfolio"
-                      ? "/portfolio#home"
-                      : "#home"
-                  }
+                  href={window.location.pathname !== "/" ? "/#home" : "#home"}
                   className="inline-block w-full text-3xl sm:text-4xl font-bold text-center text-white"
                 >
                   Home
@@ -117,8 +113,8 @@ export default function HeaderMobile() {
                 <a
                   onClick={toggleMenu}
                   href={
-                    window.location.pathname !== "/portfolio"
-                      ? "/portfolio#services"
+                    window.location.pathname !== "/"
+                      ? "/#services"
                       : "#services"
                   }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
@@ -131,7 +127,7 @@ export default function HeaderMobile() {
               >
                 <a
                   onClick={toggleMenu}
-                  href="/portfolio/about"
+                  href="/about"
                   className="inline-block w-full text-3xl sm:text-4xl text-center text-white font-bold"
                 >
                   About
@@ -143,8 +139,8 @@ export default function HeaderMobile() {
                 <a
                   onClick={toggleMenu}
                   href={
-                    window.location.pathname !== "/portfolio"
-                      ? "/portfolio#projects"
+                    window.location.pathname !== "/"
+                      ? "/#projects"
                       : "#projects"
                   }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
@@ -158,8 +154,8 @@ export default function HeaderMobile() {
                 <a
                   onClick={toggleMenu}
                   href={
-                    window.location.pathname !== "/portfolio"
-                      ? "/portfolio#contact-section"
+                    window.location.pathname !== "/"
+                      ? "/#contact-section"
                       : "#contact-section"
                   }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
