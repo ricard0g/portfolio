@@ -72,10 +72,9 @@ export default {
       backgroundImage: {
         "gradient-radial":
           "radial-gradient(100% 64% at 50% 100%,#D1FBEB 0%,rgb(243,244,246) 100%);",
-        "apps-background": "url('/portfolio/apps-integration-image.webp')",
-        "middle-section-background":
-          "url('/portfolio/background_middle_section.webp')",
-        "contact-background": "url('/portfolio/topography.svg')",
+        "apps-background": "url('/apps-integration-image.webp')",
+        "middle-section-background": "url('/background_middle_section.webp')",
+        "contact-background": "url('/topography.svg')",
       },
     },
   },
