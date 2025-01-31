@@ -11,3 +11,4 @@ export default defineConfig({
   base: "portfolio",
   integrations: [react(), tailwind()],
 });
+
