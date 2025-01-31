@@ -1,4 +1,4 @@
-![Banner section of my Portfolio](/github_img.webp)
+![Banner section of my Portfolio](./public/github_img.webp)
 
 # My Personal Portfolio!
 
