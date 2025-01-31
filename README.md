@@ -1,3 +1,5 @@
+![Banner section of my Portfolio](/github_img.webp)
+
 # My Personal Portfolio!
 
 This is my personal portfolio in which I have showcased all my projects and blogs. I have also shared my resume and contact details.
