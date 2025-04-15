@@ -1,283 +1,335 @@
 ---
 import { Image } from "astro:assets";
-import sartorialMockup from "@/assets/images/sartorial-paris__mockup4.webp";
+import sartorialMockup from "@/assets/images/sartorial-paris-mockup.webp";
+import "@/styles/global.css";
 ---
 
-<div class="fixed inset-0 min-w-min h-full -z-10 overflow-hidden">
-	<Image
-		src={sartorialMockup}
-		alt="Sartorial Paris Homepage in a mockup"
-		class="max-w-full w-full h-full object-cover shadow-xl"
-		layout="responsive"
-		width={4800}
-		height={2700}
-		sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px, 4800px"
-		quality={100}
-		format="webp"
-		style={{
-			objectFit: "cover",
-			objectPosition: "center",
-			height: "100vh",
-		}}
-	/>
-</div>
-<section class="h-screen"></section>
-<section class="w-full bg-white">
-	<section
-		class="w-10/12 md:w-3/5 mx-auto md:mt-0 py-14 animate-fade-up animate-duration-700"
-		id="about-me"
-	>
-		<h1 class="text-2xl font-display mt-8 mb-10">
-			Sartorial Paris: Building a Better Online Store
-		</h1>
-
-		<div class="mb-12">
-			<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-				Sartorial Paris is a fully working online store I built <b
-					class="font-textSemiBold">from scratch</b
-				> to show what's possible with modern web development.
-			</p>
-
-			<blockquote
-				class="border-l-4 border-gray-300 pl-4 italic my-8 text-base md:text-lg font-textBase text-gray-700"
+<section class="w-full max-w-full overflow-hidden">
+	<div class="fixed inset-0 min-w-min h-full -z-10 overflow-hidden">
+		<Image
+			src={sartorialMockup}
+			alt="Sartorial Paris Homepage in a mockup"
+			class="w-full h-full object-cover shadow-xl"
+			id="MainProjectImage"
+			layout="responsive"
+			width={4800}
+			height={2700}
+			sizes="(max-width: 640px) 1280px, (max-width: 768px) 1536px, (max-width: 1024px) 2048px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px, 4800px"
+			quality={100}
+			format="webp"
+			style="object-fit: cover; object-position: center; height: 100vh;"
+		/>
+		<div
+			class="flex-col justify-center content-center fixed bottom-14 left-[50%] -translate-x-[50%] text-sm md:text-base text-white uppercase font-thin tracking-wider"
+		>
+			<span class="w-full">Scroll</span>
+			<span class="flex justify-center items-center w-full"
+				><svg
+					width="30px"
+					height="30px"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+						id="SVGRepo_tracerCarrier"
+						stroke-linecap="round"
+						stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+						<path
+							d="M7 10L12 15L17 10"
+							stroke="#fff"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</g></svg
+				></span
 			>
-				"A place where men can find well-made clothes that combine
-				classic Parisian style with modern touches."
-			</blockquote>
-
-			<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-				I got my inspiration from <a
-					href="https://www.toddsnyder.com/"
-					class="underline">Todd Snyder's website</a
-				>, but I added my own ideas to make shopping easier and more
-				enjoyable.
-			</p>
 		</div>
+	</div>
+	<section class="relative top-0 h-screen -z-20"></section>
+	<section class="w-full bg-white">
+		<section
+			class="w-10/12 md:w-3/5 mx-auto md:mt-0 py-14 animate-fade-up animate-duration-700"
+			id="about-me"
+		>
+			<h1 class="text-2xl font-display mt-8 mb-10">
+				Sartorial Paris: Building a Better Online Store
+			</h1>
 
-		<h2 class="text-xl font-display mt-10 mb-6">What I Set Out to Do</h2>
-		<div class="mb-10">
-			<div
-				class="bg-gray-50 border-[1px] border-gray-100 p-5 rounded-lg mb-8"
-			>
-				<p class="text-base md:text-lg font-textBase mb-3 text-pretty">
-					While Todd Snyder's website was my starting point, I wanted
-					to make something that felt fresh and solved common shopping
-					frustrations.
+			<div class="mb-12">
+				<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
+					Sartorial Paris is a fully working online store I built <b
+						class="font-textSemiBold">from scratch</b
+					> to show what's possible with modern web development.
 				</p>
-				<p class="text-base md:text-lg font-textBase text-pretty">
-					I focused on <b class="font-textSemiBold"
-						>making the site fast and easy to use 🎯</b
-					> by carefully choosing the right tools for the job.
-				</p>
-			</div>
-		</div>
 
-		<h2 class="text-xl font-display mt-10 mb-6">
-			What Makes This Store Special
-		</h2>
-		<div class="mb-10">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-				<div class="border bg-gray-100 border-gray-200 rounded-lg p-5">
-					<h3 class="text-lg font-display mb-3">
-						🔍 Better Navigation
-					</h3>
-					<ul
-						class="list-disc ml-5 space-y-2 text-base font-textBase"
-					>
-						<li>
-							Menu categories that show options when you hover
-						</li>
-						<li>
-							Smart search that predicts what you're looking for
-							by implementing the <a
-								href="https://shopify.dev/docs/api/ajax/reference/predictive-search"
-								class="underline font-textSemiBold"
-								>Predictive Search API</a
-							> from scratch
-						</li>
-						<li>Navbar that follows you as you scroll</li>
-						<li>Mobile menu that's actually easy to use</li>
-					</ul>
-				</div>
+				<blockquote
+					class="border-l-4 border-gray-300 pl-4 italic my-8 text-base md:text-lg font-textBase text-gray-700"
+				>
+					"A place where men can find well-made clothes that combine
+					classic Parisian style with modern touches."
+				</blockquote>
 
-				<div class="border bg-gray-100 border-gray-200 rounded-lg p-5">
-					<h3 class="text-lg font-display mb-3">
-						🎯 Smooth Product Browsing
-					</h3>
-					<ul
-						class="list-disc ml-5 space-y-2 text-base font-textBase"
-					>
-						<li>Touch-friendly product sliders</li>
-						<li>Quick-view product details without page loads</li>
-						<li>Continuous shopping without interruptions</li>
-					</ul>
-				</div>
-
-				<div class="bg-gray-100 border border-gray-200 rounded-lg p-5">
-					<h3 class="text-lg font-display mb-3">
-						🔎 Finding What You Want
-					</h3>
-					<ul
-						class="list-disc ml-5 space-y-2 text-base font-textBase"
-					>
-						<li>
-							Filters that understand what you're looking for
-							through a full custom implementation of <a
-								class="underline font-textSemiBold"
-								href="https://shopify.dev/docs/storefronts/themes/navigation-search/filtering/storefront-filtering"
-								>Shopify's Storefront Filtering</a
-							> where the <a
-								class="underline font-textSemiBold"
-								href="https://shopify.dev/docs/storefronts/themes/navigation-search/filtering/storefront-filtering/storefront-filtering-ux"
-								>UX guidelines</a
-							> were the highest priority
-						</li>
-						<li>
-							Smart sorting by size, color, and other features
-						</li>
-						<li>Tag-based filtering that works on any device</li>
-					</ul>
-				</div>
-
-				<div class="border bg-gray-100 border-gray-200 rounded-lg p-5">
-					<h3 class="text-lg font-display mb-3">
-						👔 Helpful Suggestions
-					</h3>
-					<ul
-						class="list-disc ml-5 space-y-2 text-base font-textBase"
-					>
-						<li>
-							"You might also like" based on what you're viewing
-							throught the <a
-								class="underline font-textSemiBold"
-								href="https://shopify.dev/docs/api/ajax/reference/product-recommendations"
-								>Product Recommendations API</a
-							>
-						</li>
-						<li>
-							Fresh content that updates as you browse thanks to <a
-								class="underline font-textSemiBold"
-								href="https://shopify.dev/docs/api/ajax/section-rendering"
-								>Section Rendering API</a
-							>
-						</li>
-						<li>Personalized product discovery</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="border bg-gray-100 border-gray-200 rounded-lg p-5 mb-8">
-				<h3 class="text-lg font-display mb-3">
-					🛒 Smart Shopping Cart
-				</h3>
-				<p class="text-base font-textBase mb-3">
-					I built a cart that <b class="font-textSemiBold"
-						>just works</b
-					> the way you'd expect, implementing the <a
-						class="underline font-textSemiBold"
-						href="https://shopify.dev/docs/api/ajax/reference/cart"
-						>Cart API</a
-					>:
-				</p>
-				<ul class="list-disc ml-5 space-y-2 text-base font-textBase">
-					<li>Built from scratch to be fast and reliable</li>
-					<li>Price and quantity updates happen instantly</li>
-					<li>Checkout process that's straightforward</li>
-				</ul>
-			</div>
-		</div>
-
-		<h2 class="text-xl font-display mt-10 mb-6">How I Built It</h2>
-		<div class="mb-10">
-			<div
-				class="bg-gray-50 border-[1px] border-gray-100 p-5 rounded-lg mb-6"
-			>
-				<h3 class="text-lg font-display mb-3">
-					🚀 Simple Tools, Great Results
-				</h3>
-				<div class="flex flex-wrap gap-2 mb-4">
-					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
-						>HTML</span
-					>
-					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
-						>CSS</span
-					>
-					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
-						>Liquid</span
-					>
-					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
-						>JavaScript</span
-					>
-					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
-						>jQuery</span
-					>
-				</div>
-				<p class="text-base md:text-lg font-textBase text-pretty">
-					I used basic web technologies to build something powerful.
-					You don't always need fancy frameworks to make something
-					that works well.
+				<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
+					I got my inspiration from <a
+						href="https://www.toddsnyder.com/"
+						class="underline">Todd Snyder's website</a
+					>, but I added my own ideas to make shopping easier and more
+					enjoyable.
 				</p>
 			</div>
 
-			<div class="border bg-gray-100 border-gray-200 rounded-lg p-5">
-				<h3 class="text-lg font-display mb-3">📲 Keeping It Simple</h3>
-				<p class="text-base md:text-lg font-textBase mb-3 text-pretty">
-					Instead of relying on tons of apps and plugins, I wrote
-					custom code to get exactly what I wanted.
-				</p>
-				<div class="bg-gray-100 p-3 rounded-lg">
-					<p class="text-base font-textSemiBold">
-						Only One App Used:
+			<h2 class="text-xl font-display mt-10 mb-6">
+				What I Set Out to Do
+			</h2>
+			<div class="mb-10">
+				<div
+					class="bg-gray-50 border-[1px] border-gray-100 p-5 rounded-lg mb-8"
+				>
+					<p
+						class="text-base md:text-lg font-textBase mb-3 text-pretty"
+					>
+						While Todd Snyder's website was my starting point, I
+						wanted to make something that felt fresh and solved
+						common shopping frustrations.
 					</p>
-					<p class="text-base font-textBase">
-						Just a search and filtering app - everything else is
-						custom-built
+					<p class="text-base md:text-lg font-textBase text-pretty">
+						I focused on <b class="font-textSemiBold"
+							>making the site fast and easy to use 🎯</b
+						> by carefully choosing the right tools for the job.
 					</p>
 				</div>
 			</div>
-		</div>
 
-		<h2 class="text-xl font-display mt-10 mb-6">What I'm Proud Of</h2>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-			<div
-				class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
-			>
-				<div class="text-3xl mb-2">💫</div>
-				<h3 class="text-lg font-display mb-2">User-Friendly Design</h3>
-				<p class="text-sm font-textBase">
-					Small touches that make shopping more enjoyable
-				</p>
+			<h2 class="text-xl font-display mt-10 mb-6">
+				What Makes This Store Special
+			</h2>
+			<div class="mb-10">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+					<div
+						class="border bg-gray-100 border-gray-200 rounded-lg p-5"
+					>
+						<h3 class="text-lg font-display mb-3">
+							🔍 Better Navigation
+						</h3>
+						<ul
+							class="list-disc ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								Menu categories that show options when you hover
+							</li>
+							<li>
+								Smart search that predicts what you're looking
+								for by implementing the <a
+									href="https://shopify.dev/docs/api/ajax/reference/predictive-search"
+									class="underline font-textSemiBold"
+									>Predictive Search API</a
+								> from scratch
+							</li>
+							<li>Navbar that follows you as you scroll</li>
+							<li>Mobile menu that's actually easy to use</li>
+						</ul>
+					</div>
+
+					<div
+						class="border bg-gray-100 border-gray-200 rounded-lg p-5"
+					>
+						<h3 class="text-lg font-display mb-3">
+							🎯 Smooth Product Browsing
+						</h3>
+						<ul
+							class="list-disc ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>Touch-friendly product sliders</li>
+							<li>
+								Quick-view product details without page loads
+							</li>
+							<li>Continuous shopping without interruptions</li>
+						</ul>
+					</div>
+
+					<div
+						class="bg-gray-100 border border-gray-200 rounded-lg p-5"
+					>
+						<h3 class="text-lg font-display mb-3">
+							🔎 Finding What You Want
+						</h3>
+						<ul
+							class="list-disc ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								Filters that understand what you're looking for
+								through a full custom implementation of <a
+									class="underline font-textSemiBold"
+									href="https://shopify.dev/docs/storefronts/themes/navigation-search/filtering/storefront-filtering"
+									>Shopify's Storefront Filtering</a
+								> where the <a
+									class="underline font-textSemiBold"
+									href="https://shopify.dev/docs/storefronts/themes/navigation-search/filtering/storefront-filtering/storefront-filtering-ux"
+									>UX guidelines</a
+								> were the highest priority
+							</li>
+							<li>
+								Smart sorting by size, color, and other features
+							</li>
+							<li>
+								Tag-based filtering that works on any device
+							</li>
+						</ul>
+					</div>
+
+					<div
+						class="border bg-gray-100 border-gray-200 rounded-lg p-5"
+					>
+						<h3 class="text-lg font-display mb-3">
+							👔 Helpful Suggestions
+						</h3>
+						<ul
+							class="list-disc ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								"You might also like" based on what you're
+								viewing throught the <a
+									class="underline font-textSemiBold"
+									href="https://shopify.dev/docs/api/ajax/reference/product-recommendations"
+									>Product Recommendations API</a
+								>
+							</li>
+							<li>
+								Fresh content that updates as you browse thanks
+								to <a
+									class="underline font-textSemiBold"
+									href="https://shopify.dev/docs/api/ajax/section-rendering"
+									>Section Rendering API</a
+								>
+							</li>
+							<li>Personalized product discovery</li>
+						</ul>
+					</div>
+				</div>
+
+				<div
+					class="border bg-gray-100 border-gray-200 rounded-lg p-5 mb-8"
+				>
+					<h3 class="text-lg font-display mb-3">
+						🛒 Smart Shopping Cart
+					</h3>
+					<p class="text-base font-textBase mb-3">
+						I built a cart that <b class="font-textSemiBold"
+							>just works</b
+						> the way you'd expect, implementing the <a
+							class="underline font-textSemiBold"
+							href="https://shopify.dev/docs/api/ajax/reference/cart"
+							>Cart API</a
+						>:
+					</p>
+					<ul
+						class="list-disc ml-5 space-y-2 text-base font-textBase"
+					>
+						<li>Built from scratch to be fast and reliable</li>
+						<li>Price and quantity updates happen instantly</li>
+						<li>Checkout process that's straightforward</li>
+					</ul>
+				</div>
 			</div>
 
-			<div
-				class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
-			>
-				<div class="text-3xl mb-2">🏆</div>
-				<h3 class="text-lg font-display mb-2">Clean Code</h3>
-				<p class="text-sm font-textBase">
-					Built right so it's fast and doesn't break
-				</p>
+			<h2 class="text-xl font-display mt-10 mb-6">How I Built It</h2>
+			<div class="mb-10">
+				<div
+					class="bg-gray-50 border-[1px] border-gray-100 p-5 rounded-lg mb-6"
+				>
+					<h3 class="text-lg font-display mb-3">
+						🚀 Simple Tools, Great Results
+					</h3>
+					<div class="flex flex-wrap gap-2 mb-4">
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+							>HTML</span
+						>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+							>CSS</span
+						>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+							>Liquid</span
+						>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+							>JavaScript</span
+						>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm"
+							>jQuery</span
+						>
+					</div>
+					<p class="text-base md:text-lg font-textBase text-pretty">
+						I used basic web technologies to build something
+						powerful. You don't always need fancy frameworks to make
+						something that works well.
+					</p>
+				</div>
+
+				<div class="border bg-gray-100 border-gray-200 rounded-lg p-5">
+					<h3 class="text-lg font-display mb-3">
+						📲 Keeping It Simple
+					</h3>
+					<p
+						class="text-base md:text-lg font-textBase mb-3 text-pretty"
+					>
+						Instead of relying on tons of apps and plugins, I wrote
+						custom code to get exactly what I wanted.
+					</p>
+					<div class="bg-gray-100 p-3 rounded-lg">
+						<p class="text-base font-textSemiBold">
+							Only One App Used:
+						</p>
+						<p class="text-base font-textBase">
+							Just a search and filtering app - everything else is
+							custom-built
+						</p>
+					</div>
+				</div>
 			</div>
 
-			<div
-				class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
-			>
-				<div class="text-3xl mb-2">🔄</div>
-				<h3 class="text-lg font-display mb-2">
-					Everything Works Together
-				</h3>
-				<p class="text-sm font-textBase">
-					A smooth experience from browsing to checkout
+			<h2 class="text-xl font-display mt-10 mb-6">What I'm Proud Of</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+				<div
+					class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
+				>
+					<div class="text-3xl mb-2">💫</div>
+					<h3 class="text-lg font-display mb-2">
+						User-Friendly Design
+					</h3>
+					<p class="text-sm font-textBase">
+						Small touches that make shopping more enjoyable
+					</p>
+				</div>
+
+				<div
+					class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
+				>
+					<div class="text-3xl mb-2">🏆</div>
+					<h3 class="text-lg font-display mb-2">Clean Code</h3>
+					<p class="text-sm font-textBase">
+						Built right so it's fast and doesn't break
+					</p>
+				</div>
+
+				<div
+					class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
+				>
+					<div class="text-3xl mb-2">🔄</div>
+					<h3 class="text-lg font-display mb-2">
+						Everything Works Together
+					</h3>
+					<p class="text-sm font-textBase">
+						A smooth experience from browsing to checkout
+					</p>
+				</div>
+			</div>
+
+			<div class="border-t border-gray-200 pt-8 mt-8">
+				<p class="text-base md:text-lg font-textBase text-pretty">
+					This project shows that with careful planning and attention
+					to detail, you can build an online store that looks great,
+					works well, and keeps customers coming back.
 				</p>
 			</div>
-		</div>
-
-		<div class="border-t border-gray-200 pt-8 mt-8">
-			<p class="text-base md:text-lg font-textBase text-pretty">
-				This project shows that with careful planning and attention to
-				detail, you can build an online store that looks great, works
-				well, and keeps customers coming back.
-			</p>
-		</div>
+		</section>
 	</section>
 </section>
