@@ -1,72 +1,169 @@
 ---
 import { Image } from "astro:assets";
-import sartorialMockup from "@/assets/images/sartorial-paris__mockup.webp";
+import sartorialMockup from "@/assets/images/sartorial-paris__mockup4.webp";
 ---
 
-<section
-	class="w-10/12 md:w-3/5 mx-auto mt-20 md:mt-0 py-14 animate-fade-up animate-duration-700"
-	id="about-me"
->
-	<div class="w-full overflow-hidden">
-		<Image
-			src={sartorialMockup}
-			alt="Sartorial Paris Homepage in a mockup"
-			class="max-w-full h-auto object-contain rounded-lg shadow-xl"
-		/>
-	</div>
-	<h1 class="text-2xl font-display mt-8 mb-10">
-		Sartorial Paris - The Ultimate Menswear Destination
-	</h1>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		I'm Ricardo, an enthusiastic <b class="font-textSemiBold"
-			>Full-stack Developer</b
-		> dedicated to crafting exceptional software solutions. My expertise lies
-		in JavaScript development, where I blend technical precision with creative
-		problem-solving.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		To me, software development is a craft that demands both technical
-		excellence 🏅 and creative vision 🖼️.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		Every line of code is an opportunity to build something remarkable.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		I'm driven by the pursuit of <b class="font-textSemiBold"
-			>Engineering Excellence 🧑🏽‍💻</b
-		> and the satisfaction of creating elegant, efficient solutions.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		Over the past year, I've developed a specialization in Shopify
-		development, drawn by its rich ecosystem in development and the exciting
-		challenges of e-commerce businesses 🏬.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		My focus areas include <b class="font-textSemiBold"
-			>Shopify Theme Development</b
-		> and <b class="font-textSemiBold">Conversion Rate Optimization</b>,
-		where I help transform online stores into high-performing digital
-		experiences.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		I <b class="font-textSemiBold">Customize and Optimize 🎯</b> stores through
-		a mastery of HTML, CSS, JavaScript, and Liquid (Shopify's Templating Language),
-		crafting solutions that are both beautiful and functional.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		Though I'm proficient with modern frameworks like AlpineJS and
-		TailwindCSS, I find particular value in the simplicity and reliability
-		of vanilla Shopify themes.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		But I'll work with the tools that are best for the job.
-	</p>
-	<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
-		In <b class="font-textSemiBold">Conversion Rate Optimization 📈</b>, I
-		do <b class="font-textSemiBold">Conversion Design</b> and take a <b
-			class="font-textSemiBold">Data-driven Approach</b
-		>, utilizing advanced tools like heatmaps, scroll maps, and A/B testing
-		to uncover insights and drive meaningful improvements. Every decision is
-		backed by solid analytics and proven methodologies.
-	</p>
+<div class="fixed inset-0 min-w-min h-screen -z-10 overflow-hidden">
+	<Image
+		src={sartorialMockup}
+		alt="Sartorial Paris Homepage in a mockup"
+		class="w-full h-screen object-cover shadow-xl"
+		layout="responsive"
+		width={4800}
+		height={2700}
+		sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px, 4800px"
+		quality={100}
+		format="webp"
+		style={{
+			objectFit: "cover",
+			objectPosition: "center",
+			height: "100vh",
+		}}
+	/>
+</div>
+<section class="h-screen"></section>
+<section class="w-full bg-white">
+	<section
+		class="w-10/12 md:w-3/5 mx-auto md:mt-0 py-14 animate-fade-up animate-duration-700"
+		id="about-me"
+	>
+		<h1 class="text-2xl font-display mt-8 mb-10">
+			Sartorial Paris: A Case Study in E-commerce Excellence
+		</h1>
+		
+		<div class="mb-12">
+			<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
+				Sartorial Paris represents an in-depth exploration of advanced e-commerce principles, meticulously crafted as a functional digital shopping experience from the ground up.
+			</p>
+			
+			<blockquote class="border-l-4 border-gray-300 pl-4 italic my-8 text-base md:text-lg font-textBase text-gray-700">
+				"Embrace Parisian Elegance with Sartorial Paris. Discover meticulously crafted menswear that blends timeless style with modern sophistication."
+			</blockquote>
+			
+			<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
+				The project's conceptual foundation was inspired by <a href="https://www.toddsnyder.com/" class="underline">Todd Snyder's E-commerce platform</a>, evolving into a distinctive digital retail environment through strategic UX innovations and personalized design philosophy.
+			</p>
+		</div>
+		
+		<h2 class="text-xl font-display mt-10 mb-6">Project Vision & Evolution</h2>
+		<div class="mb-10">
+			<div class="bg-gray-50 p-5 rounded-lg mb-8">
+				<p class="text-base md:text-lg font-textBase mb-3 text-pretty">
+					While drawing initial inspiration from Todd Snyder's interface architecture, this case study evolved beyond mere replication, incorporating strategic UX innovations and personalized design philosophy to create a distinctive digital retail environment.
+				</p>
+				<p class="text-base md:text-lg font-textBase text-pretty">
+					The project's technical implementation focuses on <b class="font-textSemiBold">maximizing performance and user engagement 🎯</b> through carefully selected technologies and methodologies.
+				</p>
+			</div>
+		</div>
+		
+		<h2 class="text-xl font-display mt-10 mb-6">Standout Features & Technical Achievements</h2>
+		<div class="mb-10">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+				<div class="border border-gray-200 rounded-lg p-5">
+					<h3 class="text-lg font-display mb-3">🔍 Dynamic Navbar Revolution</h3>
+					<ul class="list-disc ml-5 space-y-2 text-base font-textBase">
+						<li>Hover-activated subcategories for intuitive navigation</li>
+						<li>Global search powered by Predictive Search API</li>
+						<li>Animation-driven fixed navbar appearing on scroll</li>
+						<li>UX-optimized mobile drawer implementation</li>
+					</ul>
+				</div>
+				
+				<div class="border border-gray-200 rounded-lg p-5">
+					<h3 class="text-lg font-display mb-3">🎯 Interactive Product Experience</h3>
+					<ul class="list-disc ml-5 space-y-2 text-base font-textBase">
+						<li>Responsive sliders using Flickity's Library</li>
+						<li>Dialog-based product pages for seamless browsing</li>
+						<li>Zero page transitions for continuous exploration</li>
+					</ul>
+				</div>
+				
+				<div class="border border-gray-200 rounded-lg p-5">
+					<h3 class="text-lg font-display mb-3">🔎 Advanced Filtering System</h3>
+					<ul class="list-disc ml-5 space-y-2 text-base font-textBase">
+						<li>Custom implementation of Shopify's Storefront Filtering</li>
+						<li>Intelligent variant and metafield-based filtering</li>
+						<li>Tag-based filter management across devices</li>
+					</ul>
+				</div>
+				
+				<div class="border border-gray-200 rounded-lg p-5">
+					<h3 class="text-lg font-display mb-3">👔 Smart Recommendations</h3>
+					<ul class="list-disc ml-5 space-y-2 text-base font-textBase">
+						<li>Context-aware product suggestions via API</li>
+						<li>Dynamic content rendering with Section Rendering API</li>
+						<li>Personalized discovery pathways</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="border border-gray-200 rounded-lg p-5 mb-8">
+				<h3 class="text-lg font-display mb-3">🛒 Sophisticated Cart System</h3>
+				<p class="text-base font-textBase mb-3">
+					The cart system represents a significant <b class="font-textSemiBold">technical achievement</b>, featuring:
+				</p>
+				<ul class="list-disc ml-5 space-y-2 text-base font-textBase">
+					<li>Complete custom implementation of the Cart API</li>
+					<li>Real-time price updates and quantity management</li>
+					<li>Seamless checkout flow optimization</li>
+				</ul>
+			</div>
+		</div>
+		
+		<h2 class="text-xl font-display mt-10 mb-6">Technical Architecture</h2>
+		<div class="mb-10">
+			<div class="bg-gray-50 p-5 rounded-lg mb-6">
+				<h3 class="text-lg font-display mb-3">🚀 Tech Stack</h3>
+				<div class="flex flex-wrap gap-2 mb-4">
+					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm">HTML</span>
+					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm">CSS</span>
+					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Liquid</span>
+					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm">JavaScript</span>
+					<span class="bg-gray-200 px-3 py-1 rounded-full text-sm">jQuery</span>
+				</div>
+				<p class="text-base md:text-lg font-textBase text-pretty">
+					From a technical architecture perspective, the platform utilizes a minimalist yet powerful technology stack – proving that sophisticated e-commerce experiences don't necessarily require complex frameworks.
+				</p>
+			</div>
+			
+			<div class="border border-gray-200 rounded-lg p-5">
+				<h3 class="text-lg font-display mb-3">📲 App Integration Philosophy</h3>
+				<p class="text-base md:text-lg font-textBase mb-3 text-pretty">
+					This case study demonstrates how thoughtful implementation and strategic technical decisions can create exceptional e-commerce experiences with minimal third-party dependencies.
+				</p>
+				<div class="bg-gray-100 p-3 rounded-lg">
+					<p class="text-base font-textSemiBold">Minimal App Usage:</p>
+					<p class="text-base font-textBase">Single Search & Discovery App for the Search and Filtering system</p>
+				</div>
+			</div>
+		</div>
+		
+		<h2 class="text-xl font-display mt-10 mb-6">Project Implementation Highlights</h2>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+			<div class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center">
+				<div class="text-3xl mb-2">💫</div>
+				<h3 class="text-lg font-display mb-2">UX Innovation</h3>
+				<p class="text-sm font-textBase">Strategic design decisions enhancing customer experience</p>
+			</div>
+			
+			<div class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center">
+				<div class="text-3xl mb-2">🏆</div>
+				<h3 class="text-lg font-display mb-2">Technical Excellence</h3>
+				<p class="text-sm font-textBase">Advanced API implementations with minimal dependencies</p>
+			</div>
+			
+			<div class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center">
+				<div class="text-3xl mb-2">🔄</div>
+				<h3 class="text-lg font-display mb-2">Seamless Integration</h3>
+				<p class="text-sm font-textBase">Unified experience across all customer touchpoints</p>
+			</div>
+		</div>
+		
+		<div class="border-t border-gray-200 pt-8 mt-8">
+			<p class="text-base md:text-lg font-textBase text-pretty">
+				This case study demonstrates how thoughtful implementation and strategic technical decisions can create exceptional e-commerce experiences that blend elegance with innovation.
+			</p>
+		</div>
+	</section>
 </section>
