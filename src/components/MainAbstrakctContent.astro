@@ -1,0 +1,311 @@
+---
+import { Image } from "astro:assets";
+import abstrakctMockup from "@/assets/images/abstrakct-mockup.webp";
+import "@/styles/global.css";
+---
+<section class="w-full max-w-full overflow-hidden">
+	<div class="fixed inset-0 min-w-min h-full -z-10 overflow-hidden">
+		<Image
+			src={abstrakctMockup}
+			alt="Abstrakct project mockup - a glimpse into minimalist brilliance"
+			class="relative right-48 sm:right-0 w-full h-full object-cover shadow-xl"
+			id="MainProjectImage"
+			layout="responsive"
+			width={4800}
+			height={2700}
+			sizes="(max-width: 640px) 1280px, (max-width: 768px) 1536px, (max-width: 1024px) 2048px, (max-width: 1920px) 1920px, (max-width: 2560px) 2560px, 4800px"
+			quality={100}
+			format="webp"
+			style="object-fit: cover; object-position: center; height: 100vh;"
+			loading="eager"
+		/>
+		<div
+			class="flex-col justify-center content-center fixed bottom-14 left-[50%] -translate-x-[50%] text-sm md:text-base text-white uppercase font-thin tracking-wider"
+		>
+			<span class="w-full">Scroll</span>
+			<span class="flex justify-center items-center w-full"
+				><svg
+					width="30px"
+					height="30px"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+						id="SVGRepo_tracerCarrier"
+						stroke-linecap="round"
+						stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+						<path
+							d="M7 10L12 15L17 10"
+							stroke="#fff"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</g></svg
+				></span
+			>
+		</div>
+	</div>
+	<div class="relative top-0 h-screen -z-20"></div>
+	<section class="w-full bg-white">
+		<section
+			class="w-10/12 md:w-3/5 mx-auto md:mt-0 py-14 animate-fade-up animate-duration-700"
+			id="about-project"
+		>
+			<h1 class="text-2xl font-display mt-8 mb-10">
+				Abstrakct 🖼️ – Where Art Transcends, and Vision Endures
+			</h1>
+
+			<div class="flex justify-center my-10">
+				<iframe
+					class="rounded-lg shadow-lg"
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/your-abstrakct-video-id" 
+					title="YouTube video player for Abstrakct (Update this!)"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen></iframe>
+			</div>
+			<ul class="list-none space-y-2 text-base font-textBase">
+				<li>
+					→ <a
+						href="https://github.com/ricard0g/abstrakct"
+						target="_blank" rel="noopener noreferrer"
+						class="underline font-textSemiBold text-lg"
+						>Dive into the Code on GitHub</a
+					>
+				</li>
+				<li>
+					→ <a
+						href="https://abstrakct.netlify.app/"
+						target="_blank" rel="noopener noreferrer"
+						class="underline font-textSemiBold text-lg"
+						>Experience Abstrakct Live!</a
+					>
+				</li>
+			</ul>
+
+			<div class="mt-6 mb-12">
+				<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
+					Welcome to <b class="font-textSemiBold">Abstrakct</b> – the art gallery where Da Vinci would've dropped his latest masterpiece (if he could figure out WiFi). It's a digital canvas where art isn't just seen, it's felt.
+				</p>
+
+				<blockquote
+					class="border-l-4 border-gray-300 pl-4 italic my-8 text-base md:text-lg font-textBase text-gray-700"
+				>
+					"This isn't just a store. It's an experience. Here, the art feels alive, and every product has a story to tell (and it's not shy about it)."
+				</blockquote>
+
+				<p class="text-base md:text-lg font-textBase mb-5 text-pretty">
+					The idea was to craft a gallery that's more than pixels on a screen. Think buttery-smooth animations, performance that'll make your browser sing, and a style that might just make the Mona Lisa crack a smile.
+				</p>
+			</div>
+
+			<h2 class="text-xl font-display mt-10 mb-6">
+				The Vision Behind The Canvas 🖼️
+			</h2>
+			<div class="mb-10">
+				<div
+					class="bg-gray-50 border-[1px] border-gray-100 p-5 rounded-lg mb-8"
+				>
+					<p
+						class="text-base md:text-lg font-textBase mb-3 text-pretty"
+					>
+						Building this store was a blast, mostly because it's powered by the <a href="https://hydrogen.shopify.dev/" target="_blank" rel="noopener noreferrer" class="underline font-textSemiBold">Hydrogen Headless Framework</a>. It's like giving your creativity a double espresso shot – all the flexibility, none of the limits.
+					</p>
+					<p class="text-base md:text-lg font-textBase text-pretty">
+						The goal? Simple: make a gallery that's more than just a pretty face. I wanted <b class="font-textSemiBold"
+							>buttery-smooth animations, lightning-fast performance, and a style that makes art feel truly alive 🌟</b
+						>.
+					</p>
+				</div>
+			</div>
+
+			<h2 class="text-xl font-display mt-10 mb-6">Standout Features That Make You Go "Ooh!" 💫</h2>
+			<div class="mb-10">
+				<div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8"> 
+					<div
+						class="border bg-gray-100 border-gray-200 rounded-lg p-5"
+					>
+						<h3 class="text-lg font-display mb-3">
+							🗽 Live a Real Product Page Experience
+						</h3>
+						<ul
+							class="list-disc ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								Product pages that don't just show you a painting—they tell you its story.
+							</li>
+							<li>
+								Every page is carefully curated, so you don't just scroll—you *feel* the art.
+							</li>
+							<li>
+								Not your average "here's a product, now buy it" vibe. This is a gallery tour, not a checkout line.
+							</li>
+						</ul>
+						<p class="mt-3 font-textSemiBold">
+							Why it's awesome:
+						</p>
+						<ul
+							class="list-disc mt-3 ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								<b class="font-textSemiBold"
+									>Deeper Connection 🧑‍🎨:</b
+								> Connect with art on an emotional level.
+							</li>
+							<li>
+								<b class="font-textSemiBold"
+									>Engaging Exploration ✨:</b
+								> Makes discovering art an adventure.
+							</li>
+						</ul>
+					</div>
+
+					<div
+						class="border bg-gray-100 border-gray-200 rounded-lg p-5"
+					>
+						<h3 class="text-lg font-display mb-3">
+							🔍 Predictive Search Implementation
+						</h3>
+						<ul
+							class="list-disc ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								Search that reads your mind (an exaggeration that I came up with). Results pop up with every keystroke, so you're never left hanging.
+							</li>
+							<li>No friction, no fuss—just type and discover.</li>
+							<li>Perfect for explorers, wanderers, and the "I forgot the name but it's blue" crowd.</li>
+						</ul>
+						<p class="mt-3 font-textSemiBold">
+							Why it's awesome:
+						</p>
+						<ul
+							class="list-disc mt-3 ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								<b class="font-textSemiBold"
+									>Instant Gratification ⚡️:</b
+								> Find what you want, faster than you can say "Picasso."
+							</li>
+							<li>
+								<b class="font-textSemiBold">Effortless Browsing 🍃:</b> Makes finding art a breeze.
+							</li>
+						</ul>
+					</div>
+ 
+					<div
+						class="border bg-gray-100 border-gray-200 rounded-lg p-5"
+					>
+						<h3 class="text-lg font-display mb-3">
+							🙋🏽‍♂️ Smart Product Recommendations on Product Page
+						</h3>
+						<ul
+							class="list-disc ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								Recommendations that actually make sense.
+							</li>
+							<li>Find your next favorite piece, even if you didn't know you were looking for it.</li>
+					</ul>
+						<p class="mt-3 font-textSemiBold">
+							Why it's awesome:
+						</p>
+						<ul
+							class="list-disc mt-3 ml-5 space-y-2 text-base font-textBase"
+						>
+							<li>
+								<b class="font-textSemiBold"
+									>Discover Hidden Gems 💎:</b
+								> Unearth art you'll adore.
+							</li>
+							<li>
+								<b class="font-textSemiBold">Personalized Journey 🎨:</b> Feels like the gallery knows your taste.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="text-xl font-display mt-10 mb-6">The Tech Stack Magic Show ⚙️</h2>
+			<div class="mb-10">
+				<div
+					class="bg-gray-50 border-[1px] border-gray-100 p-5 rounded-lg mb-6"
+				>
+					<h3 class="text-lg font-display mb-3">Brewed With:</h3>
+					<div class="flex flex-wrap gap-2 mb-4">
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm hover:bg-gray-300 transition-colors">Hydrogen</span>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm hover:bg-gray-300 transition-colors">Remix</span>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm hover:bg-gray-300 transition-colors">Tailwind CSS</span>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm hover:bg-gray-300 transition-colors">TypeScript</span>
+						<span class="bg-gray-200 px-3 py-1 rounded-full text-sm hover:bg-gray-300 transition-colors">react-spring</span>
+						 <span class="bg-gray-200 px-3 py-1 rounded-full text-sm hover:bg-gray-300 transition-colors">Netlify</span>
+					</div>
+					<p class="text-base md:text-lg font-textBase text-pretty">
+						Hydrogen is the backbone, Remix handles routes smoother than a fresh canvas, Tailwind CSS keeps things stylish, TypeScript ensures the code behaves, react-spring adds animations that don't just move (and support SSR!), and Netlify... well, deploying should be easy, but sometimes it just isn't (and yes, there were a few hoops to jump through).
+					</p>
+				</div>
+
+				<div class="border bg-gray-100 border-gray-200 rounded-lg p-5">
+					<h3 class="text-lg font-display mb-3">
+						🎨 The Creative Spark
+					</h3>
+					<p
+						class="text-base md:text-lg font-textBase mb-3 text-pretty"
+					>
+						Building Abstrakct was pure fun. Having the freedom to shape every pixel and every interaction made it a project worth every late-night coffee. 
+					</p>
+					<div class="bg-gray-100 p-3 rounded-lg">
+						<p class="text-base font-textSemiBold">The Philosophy:</p>
+						<p class="text-base font-textBase">
+							To create an art gallery that's as inspiring to explore as the art itself. (Da Vinci would approve, I think.)
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="text-xl font-display mt-10 mb-6">Things That Make Me Grin 🏁</h2>
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+				<div
+					class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
+				>
+					<div class="text-3xl mb-2">🖼️</div>
+					<h3 class="text-lg font-display mb-2">
+						Artful Experience
+					</h3>
+					<p class="text-sm font-textBase">
+						More than a store, it's a digital gallery that tells a story with every click.
+					</p>
+				</div>
+
+				<div
+					class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
+				>
+					<div class="text-3xl mb-2">🚀</div>
+					<h3 class="text-lg font-display mb-2">
+						Smooth Performance
+					</h3>
+					<p class="text-sm font-textBase">
+						Fast, fluid, and a joy to navigate, thanks to a modern tech stack.
+					</p>
+				</div>
+
+				<div
+					class="bg-gray-50 p-4 rounded-lg flex flex-col items-center text-center"
+				>
+					<div class="text-3xl mb-2">💡</div>
+					<h3 class="text-lg font-display mb-2">Intuitive Discovery</h3>
+					<p class="text-sm font-textBase">
+						Smart features like predictive search make finding art effortless and fun.
+					</p>
+				</div>
+			</div>
+
+			<div class="border-t border-gray-200 pt-8 mt-8">
+				<p class="text-base md:text-lg font-textBase text-pretty">
+					Give it a spin, wander around, and see if you don't fall in love with a painting or two. After all, this is **Abstrakct** – where art transcends, and vision endures. (We're pretty sure Da Vinci would give it two thumbs up.)
+				</p>
+			</div>
+		</section>
+	</section>
+</section>
