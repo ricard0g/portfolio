@@ -155,12 +155,12 @@ export default function HeaderMobile() {
                   onClick={toggleMenu}
                   href={
                     window.location.pathname !== "/"
-                      ? "/#contact-section"
-                      : "#contact-section"
+                      ? "/#offer-section"
+                      : "#offer-section"
                   }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
-                  Contact
+                  Get Free Audit
                 </a>
               </li>
             </ul>
