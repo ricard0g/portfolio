@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectsCards = document.querySelectorAll("[id^='project-card']");
   const container = document.getElementById("translation-container");
   const cells = document.querySelectorAll("[id^='translation-cell']");
-  const offerSection = document.getElementById("offer-section");
+  const offerSection = document.getElementById("offer");
   const sections = [
     middleSection,
     projectsCards,

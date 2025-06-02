@@ -155,8 +155,8 @@ export default function HeaderMobile() {
                   onClick={toggleMenu}
                   href={
                     window.location.pathname !== "/"
-                      ? "/#offer-section"
-                      : "#offer-section"
+                      ? "/#offer"
+                      : "#offer"
                   }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
