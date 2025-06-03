@@ -7,10 +7,10 @@
 	class="relative flex flex-col items-center justify-around w-[95%] min-[425px]:w-11/12 md:w-4/5 h-auto mx-auto my-16 py-14 px-2 md:px-10 bg-contact-background rounded-xl border-[1px] border-gray-100 shadow-xl opacity-0 scroll-mt-24"
 >
 	<div
-		class="absolute inset-0 h-full w-full bg-shopify-light opacity-95 rounded-xl"
+		class="absolute inset-0 h-full w-full bg-shopify-light opacity-95 rounded-xl z-0"
 	>
 	</div>
-	<div class="w-full mx-auto z-10">
+	<div class="w-full mx-auto mb-10 z-10">
 		<h4
 			class="font-displayLight text-center text-gray-800 w-10/12 md:w-full mx-auto text-lg md:text-xl text-pretty mb-5 tracking-wide"
 		>
@@ -25,7 +25,7 @@
 			Free and no access to your store needed - I cover it all.
 		</p>
 		<ul
-			class="grid grid-cols-1 auto-rows-auto md:grid-cols-2 gap-4 w-full md:w-1/2 mx-auto mb-10 md:mb-0 text-base md:text-lg"
+			class="grid grid-cols-1 auto-rows-auto md:grid-cols-2 gap-4 w-full md:w-1/2 mx-auto  text-base md:text-lg"
 		>
 			<li class="text-shopify-light text-center">
 				<span
@@ -78,18 +78,15 @@
 			</li>
 		</ul>
 	</div>
-	<div class="w-full rounded-xl">
-		<!-- Calendly inline widget begin -->
-		<div
-			class="calendly-inline-widget"
-			data-url="https://calendly.com/ricardoguz/meet-with-me"
-			style="min-width:320px;height:700px;"
-		>
-		</div>
-		<script
-			type="text/javascript"
-			src="https://assets.calendly.com/assets/external/widget.js"
-			defer></script>
-		<!-- Calendly inline widget end -->
+	<div class="w-full rounded-xl z-10">
+		<!-- Beginning of Google Calendar Appointment Scheduling -->
+		<iframe
+			src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ341k-AyeRtMbhOvhSrICxB3IrH67CY072n7H8BBkye5kcyayeKKgE0ovx8OM7dSG2RIF4Egc-x?gv=true"
+			style="border: 0; z-index: 10;"
+			width="100%"
+			height="600"
+			class="bg-white rounded-xl z-10"
+			frameborder="0"></iframe>
+		<!-- end Google Calendar Appointment Scheduling -->
 	</div>
 </section>
