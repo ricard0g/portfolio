@@ -119,7 +119,7 @@ export default function HeaderMobile() {
                   }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
-                  Services
+                  Skills
                 </a>
               </li>
               <li
@@ -155,12 +155,12 @@ export default function HeaderMobile() {
                   onClick={toggleMenu}
                   href={
                     window.location.pathname !== "/"
-                      ? "/#offer"
-                      : "#offer"
+                      ? "/#contact"
+                      : "#contact"
                   }
                   className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
                 >
-                  Get Free Audit
+                  Contact Me
                 </a>
               </li>
             </ul>
