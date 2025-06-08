@@ -114,6 +114,21 @@ export default function HeaderMobile() {
                   onClick={toggleMenu}
                   href={
                     window.location.pathname !== "/"
+                      ? "/#tech"
+                      : "#tech"
+                  }
+                  className="inline-block w-full text-3xl sm:text-4xl text-center font-bold text-white"
+                >
+                  Tech
+                </a>
+              </li>
+              <li
+                className={`mb-4 ${isMenuOpen ? "animate-fade-down animate-duration-200 animate-delay-[700ms]" : ""}`}
+              >
+                <a
+                  onClick={toggleMenu}
+                  href={
+                    window.location.pathname !== "/"
                       ? "/#services"
                       : "#services"
                   }

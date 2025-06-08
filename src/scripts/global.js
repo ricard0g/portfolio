@@ -62,12 +62,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("translation-container");
   const cells = document.querySelectorAll("[id^='translation-cell']");
   const contactSection = document.getElementById("contact");
+  const techSection = document.getElementById("tech");
   const sections = [
     middleSection,
     projectsCards,
     container,
     cells,
     contactSection,
+    techSection,
   ];
 
   const observer = new IntersectionObserver(

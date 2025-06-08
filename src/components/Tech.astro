@@ -1,0 +1,175 @@
+---
+import { Image } from "astro:assets";
+
+// Frontend technology imports
+import html5Logo from "../assets/images/html5.svg";
+import cssLogo from "../assets/images/css.svg";
+import javascriptLogo from "../assets/images/javascript.svg";
+import typescriptLogo from "../assets/images/typescript.svg";
+import reactLogo from "../assets/images/React_light.svg";
+import preactLogo from "../assets/images/preact.svg";
+import reactRouterLogo from "../assets/images/reactrouter.svg";
+import remixLogo from "../assets/images/remix-letter-glowing.svg";
+import tailwindLogo from "../assets/images/tailwind-logo.svg";
+import viteLogo from "../assets/images/vitejs.svg";
+
+// Backend technology imports
+import nodejsLogo from "../assets/images/nodejs.svg";
+import expressLogo from "../assets/images/Express.js_light.svg";
+import mongodbLogo from "../assets/images/mongodb.svg";
+import graphqlLogo from "../assets/images/graphql.svg";
+
+// Version Control imports
+import githubLogo from "../assets/images/GitHub_light.svg";
+import gitLogo from "../assets/images/git.svg";
+---
+
+<section
+	class="flex flex-col items-center h-full scroll-mt-24 pb-10 mb-48 md:mb-52"
+	id="tech"
+>
+	<p
+		class="text-center text-lg md:text-xl font-textSemiBold text-transparent bg-gradient-to-r from-shopify-dark to-shopify-light bg-clip-text"
+	>
+		Tech Stack
+	</p>
+	<h2
+		class="text-balance text-center text-gray-800 text-3xl md:text-4xl font-display my-5 mb-10 max-w-80"
+	>
+		Tech I Use
+	</h2>
+	<div class="w-11/12 md:w-full max-w-4xl mx-auto">
+		<!-- Frontend Section -->
+		<div class="mb-12">
+			<h3 class="text-xl md:text-2xl font-textSemiBold text-gray-800 text-left mb-6">Frontend</h3>
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={html5Logo} alt="HTML5" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">HTML5</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						HTML5
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={cssLogo} alt="CSS3" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">CSS3</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						CSS3
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={javascriptLogo} alt="JavaScript" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">JavaScript</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						JavaScript
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={typescriptLogo} alt="TypeScript" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">TypeScript</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						TypeScript
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={reactLogo} alt="React" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">React</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						React
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={preactLogo} alt="Preact" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">Preact</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						Preact
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={reactRouterLogo} alt="React Router" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">React Router</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						React Router
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={remixLogo} alt="Remix" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">Remix</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						Remix
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={tailwindLogo} alt="Tailwind CSS" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">Tailwind CSS</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						Tailwind CSS
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={viteLogo} alt="Vite" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">Vite</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						Vite
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Backend Section -->
+		<div class="mb-12">
+			<h3 class="text-xl md:text-2xl font-textSemiBold text-gray-800 text-left mb-6">Backend</h3>
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={nodejsLogo} alt="Node.js" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">Node.js</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						Node.js
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={expressLogo} alt="Express.js" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">Express.js</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						Express.js
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={mongodbLogo} alt="MongoDB" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">MongoDB</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						MongoDB
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={graphqlLogo} alt="GraphQL" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">GraphQL</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						GraphQL
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Version Control Section -->
+		<div>
+			<h3 class="text-xl md:text-2xl font-textSemiBold text-gray-800 text-left mb-6">Version Control</h3>
+			<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={githubLogo} alt="GitHub" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">GitHub</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						GitHub
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center p-4 bg-gray-50 border-[1px] border-gray-100 rounded-xl hover:bg-gray-100 transition-colors duration-200 group relative">
+					<Image src={gitLogo} alt="Git" class="w-8 h-8 md:w-10 md:h-10 md:grayscale md:group-hover:grayscale-0 transition-all duration-200" />
+					<span class="text-xs text-gray-600 mt-2 md:hidden">Git</span>
+					<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none hidden md:block">
+						Git
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
